@@ -1,8 +1,8 @@
 Requirements
 ---
-* $ `nodejs`
-* $ `grunt`
-* $ `bower`
+* nodejs
+* grunt
+* bower
 
 Install
 ----
