@@ -1,14 +1,14 @@
 Requirements
 ---
-x $ `nodejs`
-x $ `grunt`
-x $ `bower`
+* $ `nodejs`
+* $ `grunt`
+* $ `bower`
 
 Install
 ----
-x $ `npm install`
-x $ `bower install`
+* $ `npm install`
+* $ `bower install`
 
 Build app
 ---
-x $ `grunt build`
+* $ `grunt build`
