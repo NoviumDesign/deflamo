@@ -827,6 +827,7 @@ img.orbit-image {
   padding: 15px;
   vertical-align: top; }
   .orbit-item:last-child {
+    width: 32.20339%;
     float: right;
     margin-right: 0; }
   .orbit-item:hover {
@@ -852,8 +853,21 @@ img.orbit-image {
     text-transform: uppercase; }
 
 footer.site-footer {
+  position: relative;
   background-color: #d2d2d2;
   padding-top: 30px; }
+  footer.site-footer:after {
+    bottom: 100%;
+    left: 40%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #d2d2d2;
+    border-width: 20px;
+    margin-left: -20px; }
 
 .footer-container {
   max-width: 1200px;

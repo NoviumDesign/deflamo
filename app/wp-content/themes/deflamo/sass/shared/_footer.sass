@@ -1,6 +1,20 @@
 footer.site-footer
+  position: relative
   background-color: $light-grey-color
   padding-top: 30px
+
+  &:after
+    bottom: 100%
+    left: 40%
+    border: solid transparent
+    content: " "
+    height: 0
+    width: 0
+    position: absolute
+    pointer-events: none
+    border-bottom-color: $light-grey-color
+    border-width: 20px
+    margin-left: -20px
 
 .footer-container
   @include container(1200px)
