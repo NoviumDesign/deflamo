@@ -31,7 +31,7 @@ function _s_setup() {
 	load_theme_textdomain( '_s', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
+	add_theme_support( 'automatic-feed-links,' );
 
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
@@ -62,6 +62,9 @@ function _s_setup() {
 		'gallery',
 		'caption',
 	) );
+
+	// Enable support for custom header
+	add_theme_support( 'custom-header' );
 }
 endif; // _s_setup
 add_action( 'after_setup_theme', '_s_setup' );

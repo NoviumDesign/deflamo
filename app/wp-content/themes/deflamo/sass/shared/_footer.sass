@@ -1,0 +1,45 @@
+footer.site-footer
+  background-color: $light-grey-color
+  padding-top: 30px
+
+.footer-container
+  @include container(1200px)
+
+.company-link-container
+
+.company-links
+  @include span(2 of 12)
+  &:last-child
+    @include span(last)
+
+  h2
+    font-size: 1.3em
+    font-weight: 700
+    color: #000000
+    margin-bottom: 5px
+
+  ul
+    margin: 0px
+    list-style-type: none
+
+    li
+      margin: 2px 0px 2px 0px
+
+      a
+        color: $dark-grey-color
+        text-decoration: none
+        line-height: 1em
+
+.company-brand, .copyright
+  margin-top: 30px
+
+.company-brand
+  @include span(6 of 12)
+
+.copyright
+  @include span(6 last of 12)
+
+  p
+    color: $copyright-color
+    text-align: right
+    padding-top: 10px
