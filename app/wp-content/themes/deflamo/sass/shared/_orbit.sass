@@ -1,8 +1,36 @@
-.orbit-container
-  @include span(full)
+img.orbit-image
+  @include span(12)
 
-  .orbit-item
-    @include span(4)
-    background-color: #000000
-    &:nth-child(3)
-      @include span(last)
+.orbit-item
+  @include span(4 inside)
+  position: relative
+  background-color: #000000
+  padding: 15px
+  vertical-align: top
+  &:last-child
+    @include span(last)
+
+  &:hover
+    background-color: $green-color
+
+  &:hover:after
+    bottom: 100%
+    left: 50%
+    border: solid transparent
+    content: " "
+    height: 0
+    width: 0
+    position: absolute
+    pointer-events: none
+    border-bottom-color: $green-color
+    border-width: 20px
+    margin-left: -20px
+
+  h2, p
+    color: #FFFFFF
+    margin: 0
+
+  h2
+    font-size: 1.4em
+    font-weight: 700
+    text-transform: uppercase

@@ -29,17 +29,18 @@ get_header(); ?>
 			<div class="content-container">
 				<div class="main-content">
 
-					<div class="orbit-container">
-						<img src="http://placehold.it/1200x200">
-						<div class="orbit-item">
-							<h2>jgiojoiej</h2><p>hgiurshguhriuhgiushrue</p>
-						</div>
-						<div class="orbit-item">
-							<h2>jgiojoiej</h2><p>hgiurshguhriuhgiushrue</p>
-						</div>
-						<div class="orbit-item">
-							<h2>jgiojoiej</h2><p>hgiurshguhriuhgiushrue</p>
-						</div>
+					<img class="orbit-image" src="http://placehold.it/1200x300">
+					<div class="orbit-item">
+						<h2>Hög Prestanda</h2>
+						<p>Du vet väl att du får rabbat om du tecknar elavtal på webben.Du vet väl att du får rabbat om du tecknar elavtal på webben</p>
+					</div>
+					<div class="orbit-item">
+						<h2>Förnya ditt elavtal</h2>
+						<p>Du vet väl att du får rabbat om du tecknar elavtal på webben.Du vet väl att du får rabbat om du tecknar elavtal på webben</p>
+					</div>
+					<div class="orbit-item">
+						<h2>Ska du flytta?</h2>
+						<p>Du vet väl att du får rabbat om du tecknar elavtal på webben.Du vet väl att du får rabbat om du tecknar elavtal på webben</p>
 					</div>
 
 					<h1 class="entry-title"><?php //the_title(); ?></h1>

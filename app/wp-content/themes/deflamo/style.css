@@ -808,19 +808,48 @@ ul.children {
   .sidebar ul.contact li.email {
     border: 1px solid white; }
 
-.orbit-container {
+img.orbit-image {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0; }
-  .orbit-container .orbit-item {
-    width: 32.20339%;
-    float: left;
-    margin-right: 1.69492%;
-    background-color: black; }
-    .orbit-container .orbit-item:nth-child(3) {
-      float: right;
-      margin-right: 0; }
+
+.orbit-item {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  position: relative;
+  background-color: black;
+  padding: 15px;
+  vertical-align: top; }
+  .orbit-item:last-child {
+    float: right;
+    margin-right: 0; }
+  .orbit-item:hover {
+    background-color: #589c3f; }
+  .orbit-item:hover:after {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #589c3f;
+    border-width: 20px;
+    margin-left: -20px; }
+  .orbit-item h2, .orbit-item p {
+    color: white;
+    margin: 0; }
+  .orbit-item h2 {
+    font-size: 1.4em;
+    font-weight: 700;
+    text-transform: uppercase; }
 
 footer.site-footer {
   background-color: #d2d2d2;
@@ -834,14 +863,39 @@ footer.site-footer {
     content: " ";
     display: block;
     clear: both; }
+  .footer-container span.bottomnav {
+    width: 83.05085%;
+    float: right;
+    margin-right: 0; }
+    .footer-container span.bottomnav ul.menu > li {
+      width: 15.25424%;
+      float: left;
+      margin-right: 1.69492%; }
+      .footer-container span.bottomnav ul.menu > li:last-child {
+        width: 15.25424%;
+        float: right;
+        margin-right: 0; }
+      .footer-container span.bottomnav ul.menu > li > a:first-child {
+        font-size: 1.3em;
+        color: black !important;
+        font-weight: 700;
+        margin-bottom: 5px; }
+    .footer-container span.bottomnav li {
+      float: none;
+      list-style-type: none; }
+    .footer-container span.bottomnav ul {
+      background: none;
+      margin: 0; }
+    .footer-container span.bottomnav ul.sub-menu {
+      margin-top: 5px; }
+    .footer-container span.bottomnav a {
+      color: #787878 !important;
+      text-decoration: none; }
 
 .company-links {
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%; }
-  .company-links:last-child {
-    float: right;
-    margin-right: 0; }
   .company-links h2 {
     font-size: 1.3em;
     font-weight: 700;
@@ -851,14 +905,10 @@ footer.site-footer {
     margin: 0px;
     list-style-type: none; }
     .company-links ul li {
-      margin: 2px 0px 2px 0px; }
-      .company-links ul li a {
-        color: #787878;
-        text-decoration: none;
-        line-height: 1em; }
+      color: #787878; }
 
 .company-brand, .copyright {
-  margin-top: 30px; }
+  margin-top: 50px; }
 
 .company-brand {
   width: 49.15254%;

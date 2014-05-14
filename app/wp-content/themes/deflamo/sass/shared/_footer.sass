@@ -5,12 +5,38 @@ footer.site-footer
 .footer-container
   @include container(1200px)
 
-.company-link-container
+  span.bottomnav
+    @include span(10 last)
+
+    ul.menu > li
+      @include span(2)
+
+      &:last-child
+        @include span(2 last)
+
+      > a:first-child
+        font-size: 1.3em
+        color: #000000 !important
+        font-weight: 700
+        margin-bottom: 5px
+    
+    li
+      float: none
+      list-style-type: none
+    
+    ul
+      background: none
+      margin: 0
+
+    ul.sub-menu
+      margin-top: 5px
+
+    a
+      color: $dark-grey-color !important
+      text-decoration: none
 
 .company-links
   @include span(2 of 12)
-  &:last-child
-    @include span(last)
 
   h2
     font-size: 1.3em
@@ -23,15 +49,10 @@ footer.site-footer
     list-style-type: none
 
     li
-      margin: 2px 0px 2px 0px
-
-      a
-        color: $dark-grey-color
-        text-decoration: none
-        line-height: 1em
+      color: $dark-grey-color
 
 .company-brand, .copyright
-  margin-top: 30px
+  margin-top: 50px
 
 .company-brand
   @include span(6 of 12)
