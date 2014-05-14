@@ -830,9 +830,9 @@ img.orbit-image {
     width: 32.20339%;
     float: right;
     margin-right: 0; }
-  .orbit-item:hover {
+  .orbit-item.active {
     background-color: #589c3f; }
-  .orbit-item:hover:after {
+  .orbit-item:after {
     bottom: 100%;
     left: 50%;
     border: solid transparent;
@@ -843,7 +843,13 @@ img.orbit-image {
     pointer-events: none;
     border-bottom-color: #589c3f;
     border-width: 20px;
-    margin-left: -20px; }
+    margin-left: -20px;
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out; }
+  .orbit-item.active:after {
+    opacity: 1; }
   .orbit-item h2, .orbit-item p {
     color: white;
     margin: 0; }
@@ -851,6 +857,24 @@ img.orbit-image {
     font-size: 1.4em;
     font-weight: 700;
     text-transform: uppercase; }
+
+.hide {
+  display: none; }
+
+.image-carousel {
+  position: relative; }
+  .image-carousel .image {
+    position: absolute;
+    display: none; }
+    .image-carousel .image .text {
+      position: absolute; }
+    .image-carousel .image.active {
+      display: inline; }
+  .image-carousel .trigger {
+    margin-top: 224px;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out; }
 
 footer.site-footer {
   position: relative;

@@ -10,10 +10,10 @@ img.orbit-image
   &:last-child
     @include span(4 last)
 
-  &:hover
+  &.active
     background-color: $green-color
 
-  &:hover:after
+  &:after
     bottom: 100%
     left: 50%
     border: solid transparent
@@ -26,6 +26,16 @@ img.orbit-image
     border-width: 20px
     margin-left: -20px
 
+    // written by backender, may not be too good...
+    opacity: 0
+    transition: all .25s ease-in-out
+    -moz-transition: all .25s ease-in-out
+    -webkit-transition: all .25s ease-in-out
+
+
+  &.active:after
+    opacity: 1
+
   h2, p
     color: #FFFFFF
     margin: 0
@@ -34,3 +44,32 @@ img.orbit-image
     font-size: 1.4em
     font-weight: 700
     text-transform: uppercase
+
+
+
+// jag lägger mina image-carousel styles här. Flytta gärna om det finns ett bättre ställe
+
+// temp location
+.hide
+  display: none
+
+.image-carousel
+  position: relative
+
+  .image
+    position: absolute
+
+    display: none
+
+    .text
+      position: absolute
+
+    &.active
+      display: inline
+
+  .trigger
+    margin-top: 224px
+
+    transition: all .25s ease-in-out
+    -moz-transition: all .25s ease-in-out
+    -webkit-transition: all .25s ease-in-out
