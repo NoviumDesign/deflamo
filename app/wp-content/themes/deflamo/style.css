@@ -845,9 +845,9 @@ img.orbit-image {
     border-width: 20px;
     margin-left: -20px;
     opacity: 0;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out; }
+    transition: opacity 300ms ease-in-out;
+    -moz-transition: opacity 300ms ease-in-out;
+    -webkit-transition: opacity 300ms ease-in-out; }
   .orbit-item.active:after {
     opacity: 1; }
   .orbit-item h2, .orbit-item p {
@@ -865,16 +865,19 @@ img.orbit-image {
   position: relative; }
   .image-carousel .image {
     position: absolute;
-    display: none; }
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+    -moz-transition: opacity 300ms ease-in-out;
+    -webkit-transition: opacity 300ms ease-in-out; }
+    .image-carousel .image.active {
+      opacity: 1; }
     .image-carousel .image .text {
       position: absolute; }
-    .image-carousel .image.active {
-      display: inline; }
   .image-carousel .trigger {
     margin-top: 224px;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out; }
+    transition: background-color 300ms ease-in-out;
+    -moz-transition: background-color 300ms ease-in-out;
+    -webkit-transition: background-color 300ms ease-in-out; }
 
 footer.site-footer {
   position: relative;
