@@ -1,15 +1,7 @@
 <?php
-/**
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
- *
- * @package _s
- */
-
+/*
+Template Name: Hem
+*/
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -28,6 +20,20 @@ get_header(); ?>
 
 			<div class="content-container">
 				<div class="main-content">
+
+					<img class="orbit-image" src="http://placehold.it/1200x300">
+					<div class="orbit-item">
+						<h2>Hög Prestanda</h2>
+						<p>Du vet väl att du får rabbat om du tecknar elavtal på webben.Du vet väl att du får rabbat om du tecknar elavtal på webben</p>
+					</div>
+					<div class="orbit-item">
+						<h2>Förnya ditt elavtal</h2>
+						<p>Du vet väl att du får rabbat om du tecknar elavtal på webben.Du vet väl att du får rabbat om du tecknar elavtal på webben</p>
+					</div>
+					<div class="orbit-item">
+						<h2>Ska du flytta?</h2>
+						<p>Du vet väl att du får rabbat om du tecknar elavtal på webben.Du vet väl att du får rabbat om du tecknar elavtal på webben</p>
+					</div>
 
 					<h1 class="entry-title"><?php //the_title(); ?></h1>
 

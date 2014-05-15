@@ -727,6 +727,14 @@ ul.children {
   ul.children li:hover a {
     color: white !important; }
 
+h1 {
+  font-size: 1.6em;
+  color: #589c3f;
+  margin-bottom: 10px; }
+
+h2 {
+  font-weight: 700; }
+
 .hero {
   background-image: url("images/hero-background.png");
   height: 300px; }
@@ -760,6 +768,7 @@ ul.children {
 
 .content-container {
   margin-top: 30px;
+  margin-bottom: 30px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
@@ -773,10 +782,76 @@ ul.children {
   float: left;
   margin-right: 1.69492%; }
 
-.entry-content h1 {
-  font-size: 1.6em;
-  color: #589c3f;
-  margin-bottom: 10px; }
+.two-columns {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 2em;
+  -moz-column-gap: 2em;
+  column-gap: 2em; }
+  .two-columns .entry-content {
+    margin-top: -10px; }
+
+.portraits {
+  width: 83.05085%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-bottom: 30px; }
+  .portraits .employee {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%; }
+    .portraits .employee:last-child {
+      width: 32.20339%;
+      float: right;
+      margin-right: 0; }
+    .portraits .employee ul {
+      list-style-type: none;
+      margin: 10px 20px 0px 20px; }
+
+.contact {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  .contact section.contact-form {
+    width: 83.05085%;
+    float: left;
+    margin-left: 8.47458%;
+    margin-right: -100%; }
+    .contact section.contact-form span {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      position: relative;
+      margin: 10px 0px 10px 0px; }
+    .contact section.contact-form label {
+      width: 18.36735%;
+      float: left;
+      margin-right: 2.04082%;
+      text-align: right;
+      margin-top: 4px; }
+    .contact section.contact-form input, .contact section.contact-form textarea {
+      width: 69.38776%;
+      float: left;
+      margin-right: 2.04082%; }
+    .contact section.contact-form input, .contact section.contact-form textarea, .contact section.contact-form button {
+      border: 1px solid #d2d2d2;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0; }
+    .contact section.contact-form textarea {
+      resize: none;
+      height: 100px; }
+    .contact section.contact-form button {
+      width: 8.16327%;
+      float: right;
+      margin-right: 0;
+      background-color: white;
+      position: absolute;
+      bottom: 0; }
 
 .sidebar {
   width: 23.72881%;
@@ -784,10 +859,11 @@ ul.children {
   margin-right: 0;
   background-color: #589c3f;
   padding: 20px; }
-  .sidebar h1.widget-title {
+  .sidebar h1, .sidebar h2 {
     color: white;
-    font-size: 1.6em;
     text-transform: uppercase; }
+  .sidebar h1 {
+    font-size: 1.6em; }
   .sidebar ul {
     margin: 0;
     list-style-type: none; }
@@ -799,14 +875,22 @@ ul.children {
         font-weight: 700; }
       .sidebar ul li a:hover {
         text-decoration: underline; }
-  .sidebar ul.contact li {
-    padding: 5px;
-    text-align: center; }
-    .sidebar ul.contact li a, .sidebar ul.contact li object, .sidebar ul.contact li .phone {
-      vertical-align: middle;
-      margin: 10px; }
-  .sidebar ul.contact li.email {
-    border: 1px solid white; }
+  .sidebar ul.contact {
+    margin-top: 20px; }
+    .sidebar ul.contact li {
+      padding: 5px;
+      text-align: center; }
+      .sidebar ul.contact li a, .sidebar ul.contact li object, .sidebar ul.contact li .phone {
+        vertical-align: middle;
+        margin: 10px; }
+    .sidebar ul.contact li.email {
+      border: 1px solid white; }
+  .sidebar .widget ul.menu > li:first-child > a, .sidebar .widget-nav-menu ul.menu > li:first-child > a {
+    font-size: 1.5em; }
+  .sidebar .widget ul.sub-menu, .sidebar .widget-nav-menu ul.sub-menu {
+    background: none; }
+    .sidebar .widget ul.sub-menu li a, .sidebar .widget-nav-menu ul.sub-menu li a {
+      color: white !important; }
 
 img.orbit-image {
   width: 100%;
@@ -858,7 +942,7 @@ footer.site-footer {
   padding-top: 30px; }
   footer.site-footer:after {
     bottom: 100%;
-    left: 40%;
+    left: 37.5%;
     border: solid transparent;
     content: " ";
     height: 0;

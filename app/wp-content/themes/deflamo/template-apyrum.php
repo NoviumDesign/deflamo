@@ -1,15 +1,7 @@
 <?php
-/**
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
- *
- * @package _s
- */
-
+/*
+Template Name: Apyrum
+*/
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -29,24 +21,27 @@ get_header(); ?>
 			<div class="content-container">
 				<div class="main-content">
 
-					<h1 class="entry-title"><?php //the_title(); ?></h1>
+					<h1 class="entry-title"><?php the_title(); ?></h1>
 
-					<?php while ( have_posts() ) : the_post(); ?>
+					<div class="two-columns">
+						<?php while ( have_posts() ) : the_post(); ?>
 
-						<?php get_template_part( 'content', 'page' ); ?>
+							<?php get_template_part( 'content', 'page' ); ?>
 
-						<?php
-							// If comments are open or we have at least one comment, load up the comment template
-							if ( comments_open() || '0' != get_comments_number() ) :
-								comments_template();
-							endif;
-						?>
+							<?php
+								// If comments are open or we have at least one comment, load up the comment template
+								if ( comments_open() || '0' != get_comments_number() ) :
+									comments_template();
+								endif;
+							?>
 
-					<?php endwhile; // end of the loop. ?>
+						<?php endwhile; // end of the loop. ?>
+					</div>
 				</div>
 
 				<div class="sidebar">
-					<?php get_sidebar(); ?>
+					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-apyrum') ) : ?>
+					<?php endif; ?>
 					<ul class="contact">
 						<li><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/phone.svg">Your browser does not support SVG</object><span class="phone">08-631 91 80</span></li>
 						<li class="email"><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/mail.svg">Your browser does not support SVG</object><a href="mailto:info@deflamo.se">info@deflamo.se</a></li>

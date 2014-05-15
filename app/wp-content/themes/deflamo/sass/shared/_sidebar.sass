@@ -3,10 +3,12 @@
   background-color: $green-color
   padding: 20px
 
-  h1.widget-title
+  h1, h2
     color: #FFFFFF
-    font-size: 1.6em
     text-transform: uppercase
+
+  h1
+    font-size: 1.6em
 
   ul
     margin: 0
@@ -24,6 +26,7 @@
         text-decoration: underline
 
   ul.contact
+    margin-top: 20px
 
     li
       padding: 5px
@@ -35,3 +38,14 @@
 
     li.email
       border: 1px solid #FFFFFF
+
+  .widget, .widget-nav-menu
+
+    ul.menu > li:first-child > a
+      font-size: 1.5em
+
+    ul.sub-menu
+      background: none
+
+      li a
+        color: #FFFFFF !important
