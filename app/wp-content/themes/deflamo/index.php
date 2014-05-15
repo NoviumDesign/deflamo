@@ -16,28 +16,42 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+			<div class="content-container">
+				<div class="main-content">
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+				<?php if ( have_posts() ) : ?>
 
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
+					<?php /* Start the Loop */ ?>
+					<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php endwhile; ?>
+						<?php
+							/* Include the Post-Format-specific template for the content.
+							 * If you want to override this in a child theme, then include a file
+							 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+							 */
+							get_template_part( 'content', get_post_format() );
+						?>
 
-			<?php _s_paging_nav(); ?>
+					<?php endwhile; ?>
 
-		<?php else : ?>
+					<?php _s_paging_nav(); ?>
 
-			<?php get_template_part( 'content', 'none' ); ?>
+				<?php else : ?>
 
-		<?php endif; ?>
+					<?php get_template_part( 'content', 'none' ); ?>
+
+				<?php endif; ?>
+				</div>
+
+
+				<div class="sidebar">
+					<?php get_sidebar(); ?>
+					<ul class="contact">
+						<li><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/phone.svg">Your browser does not support SVG</object><span class="phone">08-631 91 80</span></li>
+						<li class="email"><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/mail.svg">Your browser does not support SVG</object><a href="mailto:info@deflamo.se">info@deflamo.se</a></li>
+					</ul>
+				</div>
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
