@@ -29,6 +29,41 @@ get_header(); ?>
 			<div class="content-container">
 				<div class="main-content">
 
+<<<<<<< HEAD
+=======
+					<div class="image-carousel">
+
+						<div class="image active">
+							<div class="text">1</div>
+							<img class="orbit-image" src="http://placehold.it/1200x300">
+						</div>
+						<div class="image">
+							<div class="text">2</div>
+							<img class="orbit-image" src="http://placehold.it/1199x300">
+						</div>
+						<div class="image">
+							<div class="text">3</div>
+							<img class="orbit-image" src="http://placehold.it/1198x300">
+						</div>
+
+						<div class="orbit-item trigger active">
+							<h2>Hög Prestanda</h2>
+							<p>Du vet väl att du får rabbat om du tecknar elavtal på webben.Du vet väl att du får rabbat om du tecknar elavtal på webben</p>
+						</div>
+						<div class="orbit-item trigger">
+							<h2>Förnya ditt elavtal</h2>
+							<p>Du vet väl att du får rabbat om du tecknar elavtal på webben.Du vet väl att du får rabbat om du tecknar elavtal på webben</p>
+						</div>
+						<div class="orbit-item trigger">
+							<h2>Ska du flytta?</h2>
+							<p>Du vet väl att du får rabbat om du tecknar elavtal på webben.Du vet väl att du får rabbat om du tecknar elavtal på webben</p>
+						</div>
+
+						<!-- becouse of :last-child specific width -->
+						<div class="orbit-item hide"></div>
+					</div>
+
+>>>>>>> FETCH_HEAD
 					<h1 class="entry-title"><?php //the_title(); ?></h1>
 
 					<?php while ( have_posts() ) : the_post(); ?>
