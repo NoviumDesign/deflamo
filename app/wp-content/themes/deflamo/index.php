@@ -16,6 +16,17 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+			<div class="hero">
+				<div class="hero-container">
+					<div class="hero-tagline">
+						<h1>Välkommen till den nya generationens flamskyddsmedel</h1>
+					</div>
+					<div class="hero-icon">
+						<img src="<?php bloginfo('template_directory'); ?>/images/flamskydd.png">
+					</div>
+				</div>
+			</div>
+
 			<div class="content-container">
 				<div class="main-content">
 
@@ -45,16 +56,19 @@ get_header(); ?>
 
 
 				<div class="sidebar">
-					<?php get_sidebar(); ?>
+					<section class="multiple-widget-container">
+						<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-nyheter') ) : ?>
+						<?php endif; ?>
+					</section>
 					<ul class="contact">
 						<li><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/phone.svg">Your browser does not support SVG</object><span class="phone">08-631 91 80</span></li>
 						<li class="email"><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/mail.svg">Your browser does not support SVG</object><a href="mailto:info@deflamo.se">info@deflamo.se</a></li>
 					</ul>
 				</div>
+				
 			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

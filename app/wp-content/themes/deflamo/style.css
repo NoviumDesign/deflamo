@@ -792,6 +792,20 @@ h2 {
     .main-content article:last-child {
       border-bottom: none; }
 
+.entry-meta a {
+  color: black;
+  text-decoration: none; }
+  .entry-meta a:hover {
+    color: black;
+    text-decoration: underline; }
+
+a.more-link {
+  color: black;
+  text-decoration: none; }
+  a.more-link:hover {
+    color: black;
+    text-decoration: underline; }
+
 .two-columns {
   -webkit-column-count: 2;
   -moz-column-count: 2;
@@ -869,6 +883,12 @@ h2 {
   margin-right: 0;
   background-color: #589c3f;
   padding: 20px; }
+  .sidebar section.multiple-widget-container aside {
+    border-bottom: 4px solid white;
+    padding-bottom: 30px; }
+    .sidebar section.multiple-widget-container aside:last-child {
+      border: none;
+      padding: 0; }
   .sidebar h1, .sidebar h2 {
     color: white;
     text-transform: uppercase; }
