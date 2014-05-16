@@ -7,7 +7,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<div class="hero">
+			<div class="hero hero-hem">
 				<div class="hero-container">
 					<div class="hero-tagline">
 						<h1>Välkommen till den nya generationens flamskyddsmedel</h1>

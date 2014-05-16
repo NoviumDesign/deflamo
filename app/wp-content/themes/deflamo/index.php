@@ -21,14 +21,11 @@ get_header(); ?>
 					<div class="hero-tagline">
 						<h1>Välkommen till den nya generationens flamskyddsmedel</h1>
 					</div>
-					<div class="hero-icon">
-						<img src="<?php bloginfo('template_directory'); ?>/images/flamskydd.png">
-					</div>
 				</div>
 			</div>
 
 			<div class="content-container">
-				<div class="main-content">
+				<div class="main-content news">
 
 				<?php if ( have_posts() ) : ?>
 
@@ -65,7 +62,7 @@ get_header(); ?>
 						<li class="email"><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/mail.svg">Your browser does not support SVG</object><a href="mailto:info@deflamo.se">info@deflamo.se</a></li>
 					</ul>
 				</div>
-				
+
 			</div>
 
 		</main><!-- #main -->

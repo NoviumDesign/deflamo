@@ -15,9 +15,6 @@ get_header(); ?>
 					<div class="hero-tagline">
 						<h1>Välkommen till den nya generationens flamskyddsmedel</h1>
 					</div>
-					<div class="hero-icon">
-						<img src="<?php bloginfo('template_directory'); ?>/images/flamskydd.png">
-					</div>
 				</div>
 			</div>
 

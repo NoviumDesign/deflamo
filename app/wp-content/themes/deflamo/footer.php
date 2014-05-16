@@ -26,7 +26,7 @@
         <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
       </span>
       <div class="company-brand">
-        <object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/images/logogreen.svg">Your browser does not support SVG</object>
+        <object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/images/deflamo-logo-green.svg">Your browser does not support SVG</object>
       </div>
       <div class="copyright">
         <p>Copyright © 2014 Deflamo. Alla rättigheter förbehålls.</p>

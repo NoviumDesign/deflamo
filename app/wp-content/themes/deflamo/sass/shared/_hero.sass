@@ -1,0 +1,31 @@
+.hero
+  background-image: url('images/hero-lighter.png')
+  height: 235px
+
+.hero-container
+  @include container(1200px)
+
+.hero-tagline
+  @include span(6)
+
+  h1
+    color: white
+    font-size: 3.3em
+    line-height: 1.1em
+    text-transform: uppercase
+    margin-bottom: 0
+
+    &:first-child
+      margin-top: 35px
+
+.hero-hem
+  background-image: url('images/hero-fireman.png')
+
+.hero-contact
+  background-image: url('images/hero-contact.jpg')
+
+.hero-icon
+  @include span(3 last)
+
+  img
+    margin-top: 20px

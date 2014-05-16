@@ -10,10 +10,12 @@ get_header(); ?>
 			<div class="hero">
 				<div class="hero-container">
 					<div class="hero-tagline">
-						<h1>Välkommen till den nya generationens flamskyddsmedel</h1>
+						<h1><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/check.svg">Your browser does not support SVG</object> Hög Prestanda</h1>
+						<h1><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/check.svg">Your browser does not support SVG</object> Bra Pris</h1>
+						<h1><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/check.svg">Your browser does not support SVG</object> Miljöanpassat</h1>
 					</div>
 					<div class="hero-icon">
-						<img src="<?php bloginfo('template_directory'); ?>/images/flamskydd.png">
+						<img src="<?php bloginfo('template_directory'); ?>/images/framtid.png">
 					</div>
 				</div>
 			</div>
