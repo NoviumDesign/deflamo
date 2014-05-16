@@ -29,29 +29,29 @@ get_header(); ?>
 						
 					<span class="portraits">
 						<div class="employee">
-							<img src="http://placehold.it/250x300">
+							<img src="<?php bloginfo('template_directory'); ?>/images/stefan-eriksson.jpg">
 							<ul>
 								<li>Stefan Eriksson</li>
 								<li>Säljare</li>
 								<li>0761 - 372 032</li>
-								<li><a href="#">arvid@deflamo.se</a></li>
+								<li><a href="#">stefan@deflamo.se</a></li>
 							</ul>
 						</div>
 						<div class="employee">
-							<img src="http://placehold.it/250x300">
+							<img src="<?php bloginfo('template_directory'); ?>/images/susanne-brandhild.jpg">
 							<ul>
-								<li>Stefan Eriksson</li>
+								<li>Susanne Brandhild</li>
 								<li>Säljare</li>
-								<li>0761 - 372 032</li>
-								<li><a href="#">arvid@deflamo.se</a></li>
+								<li>0761 - 372 043</li>
+								<li><a href="#">susanne@deflamo.se</a></li>
 							</ul>
 						</div>
 						<div class="employee">
-							<img src="http://placehold.it/250x300">
+							<img src="<?php bloginfo('template_directory'); ?>/images/arvid-lundkvist.jpg">
 							<ul>
-								<li>Stefan Eriksson</li>
+								<li>Arvid Lundkvist</li>
 								<li>Säljare</li>
-								<li>0761 - 372 032</li>
+								<li>0761 - 372 063</li>
 								<li><a href="#">arvid@deflamo.se</a></li>
 							</ul>
 						</div>

@@ -21,7 +21,7 @@ get_header(); ?>
 			<div class="content-container">
 				<div class="main-content">
 
-					<div class="image-carousel">
+					<div class="image-carousel clearfix">
 
 						<div class="image active">
 							<div class="text">1</div>
