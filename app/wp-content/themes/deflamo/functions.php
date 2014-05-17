@@ -158,3 +158,16 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+
+
+
+// image something (test)
+// Lägg till stöd för utvalda bilder
+if ( function_exists( 'add_theme_support' ) ) { 
+	add_theme_support( 'post-thumbnails', array('post','page') );
+}
+if ( function_exists( 'add_image_size' ) ) { 
+	add_image_size( 'page_image' );
+}
