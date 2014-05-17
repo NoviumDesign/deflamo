@@ -13,10 +13,14 @@
 get_header(); ?>
 
 <?php
+	// page image
 	$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'page_image');
 	$page_image_url = $thumb['0'];
-
 	$hero_image = $page_image_url ? 'background-image: url(' . $page_image_url . ')' : '';
+
+	// side navbar  
+	$parent_page = $post->post_parent ? $post->post_parent : $post->ID;
+	$subpages = wp_list_pages('title_li=&child_of=' . $parent_page . '&echo=0');
 ?>
 
 	<div id="primary" class="content-area">
@@ -49,6 +53,18 @@ get_header(); ?>
 				</div>
 
 				<div class="sidebar">
+
+					<?php if ($subpages) { ?>
+						<div id="secondary">
+							<aside>
+								<h1><?php echo get_the_title($parent_page) ?></h1>
+								<ul>
+									<?php echo $subpages; ?>
+								</ul>
+							</aside>
+						</div>
+					<?php } ?>
+
 					<?php get_sidebar(); ?>
 					<ul class="contact">
 						<li><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/phone.svg">Your browser does not support SVG</object><span class="phone">08-631 91 80</span></li>
