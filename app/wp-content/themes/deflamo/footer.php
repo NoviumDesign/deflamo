@@ -12,7 +12,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
     <div class="footer-container">  
-      <div class="company-links">
+      <!-- Not sure if to remove or not yet <div class="company-links">
         <h2>Adress</h2>
         <ul>
           <li>Deflamo</li>
@@ -21,7 +21,7 @@
           <li>Sweden</li>
           <li>+46-8-631 91 80</li>
         </ul>
-      </div>
+      </div> -->
       <span class="bottomnav">
         <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
       </span>

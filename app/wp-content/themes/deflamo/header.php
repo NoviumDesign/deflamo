@@ -37,8 +37,8 @@
 
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 					<ul class="language">
-						<li><a href="#">Engelska</a></li>
-						<li><a href="#">Svenska</a></li>
+						<li class=""><a href="#">Engelska</a></li>
+						<li class="active"><a href="#">Svenska</a></li>
 					</ul>
 				</nav><!-- #site-navigation -->
 			</div>

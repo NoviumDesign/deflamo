@@ -712,9 +712,12 @@ ul.language {
   right: 75px; }
   ul.language li {
     background-color: white;
+    opacity: 0.6;
     border-radius: 5px 5px 0 0;
     margin: 0px 5px 0px 5px;
     padding: 0px 5px 0px 5px; }
+    ul.language li.active {
+      opacity: 1; }
 
 ul.sub-menu,
 ul.children {
@@ -768,6 +771,10 @@ th, td {
     width: 83.05085%;
     float: left;
     margin-right: 1.69492%; }
+
+iframe {
+  width: 100%;
+  height: 1000px; }
 
 .hero {
   background-image: url("images/hero-lighter.png");
@@ -1077,15 +1084,16 @@ footer.site-footer {
     display: block;
     clear: both; }
   .footer-container span.bottomnav {
-    width: 83.05085%;
-    float: right;
+    width: 100%;
+    float: left;
+    margin-left: 0;
     margin-right: 0; }
     .footer-container span.bottomnav ul.menu > li {
-      width: 16.66667%;
+      width: 13.7931%;
       float: left;
-      margin-right: 4.16667%; }
+      margin-right: 3.44828%; }
       .footer-container span.bottomnav ul.menu > li:last-child {
-        width: 16.66667%;
+        width: 13.7931%;
         float: right;
         margin-right: 0; }
       .footer-container span.bottomnav ul.menu > li > a:first-child {

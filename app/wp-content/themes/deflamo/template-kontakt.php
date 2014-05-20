@@ -60,7 +60,7 @@ get_header(); ?>
 					<span class="contact">
 						<section class="contact-form">
 							<span><label for="namn">Namn:</label><input type="text" name="namn"></span>
-							<span><label for="epost">Epost:</label><input type="text" name="epost"></span>
+							<span><label for="epost">Epost:</label><input type="email" name="epost"></span>
 							<span><label for="amne">Ämne:</label><input type="text" name="amne"></span>
 							<span><label for="meddelande">Meddelande:</label><textarea name="meddelande"></textarea><button>Skicka</button></span>
 						</section>

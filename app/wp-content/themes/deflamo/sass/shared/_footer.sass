@@ -20,13 +20,13 @@ footer.site-footer
   @include container(1200px)
 
   span.bottomnav
-    @include span(10 last of 12)
+    @include span(12 of 12)
 
     ul.menu > li
-      @include span(1 of 5)
+      @include span(1 of 6)
 
       &:last-child
-        @include span(1 last of 5)
+        @include span(1 last of 6)
 
       > a:first-child
         font-size: 1.3em
