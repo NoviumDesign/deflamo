@@ -13,7 +13,7 @@ get_header(); ?>
 						<h1>Välkommen till den nya generationens flamskyddsmedel</h1>
 					</div>
 					<div class="hero-icon">
-						<img src="<?php bloginfo('template_directory'); ?>/images/flamskydd.png">
+						<object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/flamskyddande.svg">Your browser does not support SVG</object>
 					</div>
 				</div>
 			</div>
@@ -37,16 +37,22 @@ get_header(); ?>
 						</div>
 
 						<div class="orbit-item trigger active">
-							<h2>Hög Prestanda</h2>
-							<p>Du vet väl att du får rabbat om du tecknar elavtal på webben.Du vet väl att du får rabbat om du tecknar elavtal på webben</p>
+							<a href="#">
+								<h2>Effektivt och snällt mot miljön</h2>
+								<p>Vårt flamskyddsmedel Apyrum är unikt på två sätt. Det har hög prestanda samtidigt som det är miljöanpassat.</p>
+							</a>
 						</div>
 						<div class="orbit-item trigger">
-							<h2>Förnya ditt elavtal</h2>
-							<p>Du vet väl att du får rabbat om du tecknar elavtal på webben.Du vet väl att du får rabbat om du tecknar elavtal på webben</p>
+							<a href="http://deflamo.dev/apyrum/labb-och-arbetsprocess/">
+								<h2>Det ska vara smidigt att byta teknologi. </h2>
+								<p>Därför har Deflamo ett nära samarbete med dig som kund under hela skiftet. I vårt eget labb genomför vi alla nödvändiga tester.</p>
+							</a>
 						</div>
 						<div class="orbit-item trigger">
-							<h2>Ska du flytta?</h2>
-							<p>Du vet väl att du får rabbat om du tecknar elavtal på webben.Du vet väl att du får rabbat om du tecknar elavtal på webben</p>
+							<a href="http://deflamo.dev/applikationer/vara-utvecklingsapplikationer/">
+								<h2>Vilken applikation passar din verksamhet?</h2>
+								<p>Vårt flamskyddsmedel Apyrum har utvecklats för att passa en rad olika material och användningsområden.</p>
+							</a>
 						</div>
 
 						<!-- becouse of :last-child specific width -->

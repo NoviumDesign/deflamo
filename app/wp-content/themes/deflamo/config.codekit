@@ -144,28 +144,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/flamskydd.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 15003,
-		"inputAbbreviatedPath": "\/images\/flamskydd.png",
-		"outputAbbreviatedPath": "\/images\/flamskydd.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/framtid.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 12224,
-		"inputAbbreviatedPath": "\/images\/framtid.png",
-		"outputAbbreviatedPath": "\/images\/framtid.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/hero-contact.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

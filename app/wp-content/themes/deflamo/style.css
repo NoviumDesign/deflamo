@@ -744,7 +744,7 @@ h3 {
   font-weight: 700; }
 
 table, tr, th, td {
-  border: 1px solid black; }
+  border: 1px solid #d2d2d2; }
 
 th, td {
   padding: 5px 10px 5px 10px; }
@@ -805,8 +805,8 @@ th, td {
   width: 23.72881%;
   float: right;
   margin-right: 0; }
-  .hero-icon img {
-    margin-top: 20px; }
+  .hero-icon object {
+    margin-top: 10px; }
 
 .two-columns .entry-content {
   -webkit-column-count: 2;
@@ -993,7 +993,8 @@ img.orbit-image {
   position: relative;
   background-color: black;
   padding: 15px;
-  vertical-align: top; }
+  vertical-align: top;
+  height: 200px; }
   .orbit-item:last-child {
     width: 32.20339%;
     float: right;
@@ -1025,6 +1026,8 @@ img.orbit-image {
     font-size: 1.4em;
     font-weight: 700;
     text-transform: uppercase; }
+  .orbit-item a {
+    text-decoration: none; }
 
 .hide {
   display: none; }
@@ -1044,9 +1047,9 @@ img.orbit-image {
       position: absolute; }
   .image-carousel .trigger {
     margin-top: 224px;
-    transition: background-color 300ms ease-in-out;
-    -moz-transition: background-color 300ms ease-in-out;
-    -webkit-transition: background-color 300ms ease-in-out; }
+    transition: opacity 300ms ease-in-out;
+    -moz-transition: opacity 300ms ease-in-out;
+    -webkit-transition: opacity 300ms ease-in-out; }
 
 footer.site-footer {
   position: relative;

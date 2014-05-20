@@ -85,15 +85,6 @@ function _s_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Sidebar-apyrum', '_s' ),
-		'id'            => 'sidebar-apyrum',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
-	) );
-	register_sidebar( array(
 		'name'          => __( 'Sidebar-kontakt', '_s' ),
 		'id'            => 'sidebar-kontakt',
 		'description'   => '',
@@ -158,10 +149,6 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
-
-
-
-
 
 // image something (test)
 // Lägg till stöd för utvalda bilder

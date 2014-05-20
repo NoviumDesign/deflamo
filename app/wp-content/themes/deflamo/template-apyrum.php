@@ -26,7 +26,7 @@ get_header('apyrum'); ?>
 						<h1><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/check.svg">Your browser does not support SVG</object> Miljöanpassat</h1>
 					</div>
 					<div class="hero-icon">
-						<img src="<?php bloginfo('template_directory'); ?>/images/framtid.png">
+							<object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/framtidssakrad.svg">Your browser does not support SVG</object>
 					</div>
 				</div>
 			</div>
