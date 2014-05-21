@@ -12,18 +12,12 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
     <div class="footer-container">  
-      <!-- Not sure if to remove or not yet <div class="company-links">
-        <h2>Adress</h2>
-        <ul>
-          <li>Deflamo</li>
-          <li>Fakturavägen 4</li>
-          <li>SE-175 62 Järfalla</li>
-          <li>Sweden</li>
-          <li>+46-8-631 91 80</li>
-        </ul>
-      </div> -->
+      <div class="company-links">
+        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-sidfot') ) : ?>
+        <?php endif; ?>
+      </div>
       <span class="bottomnav">
-        <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+        <?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>
       </span>
       <div class="company-brand">
         <object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/images/deflamo-logo-green.svg">Your browser does not support SVG</object>

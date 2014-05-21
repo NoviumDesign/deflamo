@@ -33,7 +33,7 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
-		<?php the_content( __( 'Fortsätt läsa... <span class="meta-nav">&rarr;</span>', '_s' ) ); ?>
+		<?php the_content( __( '<br>Fortsätt läsa... <span class="meta-nav">&rarr;</span>', '_s' ) ); ?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', '_s' ),

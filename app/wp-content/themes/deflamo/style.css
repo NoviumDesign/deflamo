@@ -731,7 +731,7 @@ ul.children {
     color: white !important; }
 
 h1 {
-  font-size: 1.6em;
+  font-size: 2em;
   color: #589c3f; }
   h1 a {
     color: black;
@@ -741,16 +741,24 @@ h1 {
 
 h2 {
   font-weight: 700;
-  font-size: 1.2em; }
+  font-size: 1.4em; }
 
 h3 {
   font-weight: 700; }
 
 table, tr, th, td {
-  border: 1px solid #d2d2d2; }
+  border-top: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2; }
 
 th, td {
   padding: 5px 10px 5px 10px; }
+
+tr:nth-child(2n+2) {
+  background-color: #d2d2d2;
+  border-color: #787878; }
+
+ul {
+  margin: 0px 0px 20px 20px; }
 
 .content-container {
   margin-top: 30px;
@@ -771,49 +779,24 @@ th, td {
     width: 83.05085%;
     float: left;
     margin-right: 1.69492%; }
+    .main-content article h1 {
+      line-height: 1.2em;
+      margin-bottom: 10px;
+      max-width: 75%; }
+    .main-content article h2 {
+      line-height: 1.2em;
+      margin-bottom: 10px; }
+    .main-content article p {
+      line-height: 1.4em;
+      margin-bottom: 20px; }
 
 iframe {
   width: 100%;
   height: 1000px; }
 
 .hero {
-  background-image: url("images/hero-lighter.png");
-  height: 235px; }
-
-.hero-container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto; }
-  .hero-container:after {
-    content: " ";
-    display: block;
-    clear: both; }
-
-.hero-tagline {
-  width: 49.15254%;
-  float: left;
-  margin-right: 1.69492%; }
-  .hero-tagline h1 {
-    color: white;
-    font-size: 3.3em;
-    line-height: 1.1em;
-    text-transform: uppercase;
-    margin-bottom: 0; }
-    .hero-tagline h1:first-child {
-      margin-top: 35px; }
-
-.hero-hem {
-  background-image: url("images/hero-fireman.png"); }
-
-.hero-contact {
-  background-image: url("images/hero-contact.jpg"); }
-
-.hero-icon {
-  width: 23.72881%;
-  float: right;
-  margin-right: 0; }
-  .hero-icon object {
-    margin-top: 10px; }
+  height: 235px;
+  margin-left: -100px; }
 
 .two-columns .entry-content {
   -webkit-column-count: 2;
@@ -823,11 +806,16 @@ iframe {
   -webkit-column-span: all;
   -moz-column-span: all;
   column-span: all; }
+.two-columns .span-columns {
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  column-span: all; }
 
 .portraits {
-  width: 83.05085%;
+  width: 100%;
   float: left;
-  margin-right: 1.69492%;
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 30px; }
   .portraits .employee {
     width: 32.20339%;
@@ -872,7 +860,6 @@ iframe {
       border: 1px solid #d2d2d2;
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
-      -ms-border-radius: 0;
       border-radius: 0; }
     .contact section.contact-form textarea {
       resize: none;
@@ -954,9 +941,11 @@ a.more-link {
     color: white;
     text-transform: uppercase; }
   .sidebar h1 {
-    font-size: 1.6em; }
+    font-size: 1.6em;
+    line-height: 1.2em;
+    margin-bottom: 10px; }
   .sidebar ul {
-    margin: 0;
+    margin: 0px 0px 30px 0px;
     list-style-type: none; }
     .sidebar ul li {
       color: white; }
@@ -967,7 +956,7 @@ a.more-link {
       .sidebar ul li a:hover {
         text-decoration: underline; }
   .sidebar ul.contact {
-    margin-top: 20px; }
+    margin: 0; }
     .sidebar ul.contact li {
       padding: 5px;
       text-align: center; }
@@ -1000,14 +989,16 @@ img.orbit-image {
   position: relative;
   background-color: black;
   padding: 15px;
-  vertical-align: top;
-  height: 200px; }
+  min-height: 205px; }
   .orbit-item:last-child {
     width: 32.20339%;
     float: right;
     margin-right: 0; }
   .orbit-item.active {
-    background-color: #589c3f; }
+    background-color: #589c3f;
+    transition: opacity 300ms ease-in-out;
+    -moz-transition: opacity 300ms ease-in-out;
+    -webkit-transition: opacity 300ms ease-in-out; }
   .orbit-item:after {
     bottom: 100%;
     left: 50%;
@@ -1020,12 +1011,11 @@ img.orbit-image {
     border-bottom-color: #589c3f;
     border-width: 20px;
     margin-left: -20px;
-    opacity: 0;
-    transition: opacity 300ms ease-in-out;
-    -moz-transition: opacity 300ms ease-in-out;
-    -webkit-transition: opacity 300ms ease-in-out; }
+    opacity: 0; }
   .orbit-item.active:after {
     opacity: 1; }
+  .orbit-item:hover {
+    cursor: pointer; }
   .orbit-item h2, .orbit-item p {
     color: white;
     margin: 0; }
@@ -1041,7 +1031,10 @@ img.orbit-image {
 
 .image-carousel {
   position: relative;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  width: 120.40816%;
+  float: left;
+  margin-right: 2.04082%; }
   .image-carousel .image {
     position: absolute;
     opacity: 0;
@@ -1084,16 +1077,15 @@ footer.site-footer {
     display: block;
     clear: both; }
   .footer-container span.bottomnav {
-    width: 100%;
-    float: left;
-    margin-left: 0;
+    width: 79.59184%;
+    float: right;
     margin-right: 0; }
     .footer-container span.bottomnav ul.menu > li {
-      width: 13.7931%;
+      width: 21.05263%;
       float: left;
-      margin-right: 3.44828%; }
+      margin-right: 5.26316%; }
       .footer-container span.bottomnav ul.menu > li:last-child {
-        width: 13.7931%;
+        width: 21.05263%;
         float: right;
         margin-right: 0; }
       .footer-container span.bottomnav ul.menu > li > a:first-child {
@@ -1114,10 +1106,10 @@ footer.site-footer {
       text-decoration: none; }
 
 .company-links {
-  width: 15.25424%;
+  width: 18.36735%;
   float: left;
-  margin-right: 1.69492%; }
-  .company-links h2 {
+  margin-right: 2.04082%; }
+  .company-links h2, .company-links h1 {
     font-size: 1.3em;
     font-weight: 700;
     color: black;

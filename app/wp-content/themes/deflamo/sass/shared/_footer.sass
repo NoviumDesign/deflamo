@@ -20,13 +20,13 @@ footer.site-footer
   @include container(1200px)
 
   span.bottomnav
-    @include span(12 of 12)
+    @include span(8 last of 10)
 
     ul.menu > li
-      @include span(1 of 6)
+      @include span(1 of 4)
 
       &:last-child
-        @include span(1 last of 6)
+        @include span(1 last of 4)
 
       > a:first-child
         font-size: 1.3em
@@ -50,9 +50,9 @@ footer.site-footer
       text-decoration: none
 
 .company-links
-  @include span(2 of 12)
+  @include span(2 of 10)
 
-  h2
+  h2, h1
     font-size: 1.3em
     font-weight: 700
     color: #000000

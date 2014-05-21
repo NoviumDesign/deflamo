@@ -43,6 +43,7 @@ function _s_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', '_s' ),
+		'secondary' => __( 'Footer Menu', '_s' ),
 	) );
 
 	// Enable support for Post Formats.
@@ -85,7 +86,7 @@ function _s_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Sidebar-kontakt', '_s' ),
+		'name'          => __( 'Sidebar Kontakt', '_s' ),
 		'id'            => 'sidebar-kontakt',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -94,8 +95,17 @@ function _s_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Sidebar-nyheter', '_s' ),
+		'name'          => __( 'Sidebar Nyheter', '_s' ),
 		'id'            => 'sidebar-nyheter',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Kontaktuppgifter Sidfot', '_s' ),
+		'id'            => 'sidebar-sidfot',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',

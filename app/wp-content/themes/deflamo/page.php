@@ -25,13 +25,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="hero" style="<?php echo $hero_image; ?>">
-				<div class="hero-container">
-					<div class="hero-tagline">
-						<h1>Välkommen till den nya generationens flamskyddsmedel</h1>
-					</div>
-				</div>
-			</div>
+			<div class="hero" style="<?php echo $hero_image; ?>"></div>
 
 			<div class="content-container">
 				<div class="main-content">

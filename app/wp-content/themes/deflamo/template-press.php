@@ -4,19 +4,17 @@ Template Name: Press
 */
 get_header(); ?>
 
+<?php
+	// page image
+	$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'page_image');
+	$page_image_url = $thumb['0'];
+	$hero_image = $page_image_url ? 'background-image: url(' . $page_image_url . ')' : '';
+?>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<div class="hero hero-hem">
-				<div class="hero-container">
-					<div class="hero-tagline">
-						<h1>Välkommen till den nya generationens flamskyddsmedel</h1>
-					</div>
-					<div class="hero-icon">
-						<object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/flamskyddande.svg">Your browser does not support SVG</object>
-					</div>
-				</div>
-			</div>
+			<div class="hero" style="<?php echo $hero_image; ?>"></div>
 
 			<div class="content-container">
 				<div class="main-content">

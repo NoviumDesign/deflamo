@@ -4,11 +4,17 @@ Template Name: Kontakt
 */
 get_header(); ?>
 
+<?php
+	// page image
+	$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'page_image');
+	$page_image_url = $thumb['0'];
+	$hero_image = $page_image_url ? 'background-image: url(' . $page_image_url . ')' : '';
+?>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<div class="hero hero-contact">
-			</div>
+			<div class="hero" style="<?php echo $hero_image; ?>"></div>
 
 			<div class="content-container">
 				<div class="main-content">
@@ -26,36 +32,6 @@ get_header(); ?>
 						?>
 
 					<?php endwhile; // end of the loop. ?>
-						
-					<span class="portraits">
-						<div class="employee">
-							<img src="<?php bloginfo('template_directory'); ?>/images/stefan-eriksson.jpg">
-							<ul>
-								<li>Stefan Eriksson</li>
-								<li>Säljare</li>
-								<li>0761 - 372 032</li>
-								<li><a href="#">stefan@deflamo.se</a></li>
-							</ul>
-						</div>
-						<div class="employee">
-							<img src="<?php bloginfo('template_directory'); ?>/images/susanne-brandhild.jpg">
-							<ul>
-								<li>Susanne Brandhild</li>
-								<li>Säljare</li>
-								<li>0761 - 372 043</li>
-								<li><a href="#">susanne@deflamo.se</a></li>
-							</ul>
-						</div>
-						<div class="employee">
-							<img src="<?php bloginfo('template_directory'); ?>/images/arvid-lundkvist.jpg">
-							<ul>
-								<li>Arvid Lundkvist</li>
-								<li>Säljare</li>
-								<li>0761 - 372 063</li>
-								<li><a href="#">arvid@deflamo.se</a></li>
-							</ul>
-						</div>
-					</span>
 
 					<span class="contact">
 						<section class="contact-form">

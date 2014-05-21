@@ -4,60 +4,20 @@ Template Name: Hem
 */
 get_header(); ?>
 
+<?php
+	// page image
+	$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'page_image');
+	$page_image_url = $thumb['0'];
+	$hero_image = $page_image_url ? 'background-image: url(' . $page_image_url . ')' : '';
+?>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<div class="hero hero-hem">
-				<div class="hero-container">
-					<div class="hero-tagline">
-						<h1>Välkommen till den nya generationens flamskyddsmedel</h1>
-					</div>
-					<div class="hero-icon">
-						<object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/flamskyddande.svg">Your browser does not support SVG</object>
-					</div>
-				</div>
-			</div>
+			<div class="hero" style="<?php echo $hero_image; ?>"></div>
 
 			<div class="content-container">
 				<div class="main-content">
-
-					<div class="image-carousel clearfix">
-
-						<div class="image active">
-							<div class="text">1</div>
-							<img class="orbit-image" src="http://placehold.it/1200x300">
-						</div>
-						<div class="image">
-							<div class="text">2</div>
-							<img class="orbit-image" src="http://placehold.it/1199x300">
-						</div>
-						<div class="image">
-							<div class="text">3</div>
-							<img class="orbit-image" src="http://placehold.it/1198x300">
-						</div>
-
-						<div class="orbit-item trigger active">
-							<a href="#">
-								<h2>Effektivt och snällt mot miljön</h2>
-								<p>Vårt flamskyddsmedel Apyrum är unikt på två sätt. Det har hög prestanda samtidigt som det är miljöanpassat.</p>
-							</a>
-						</div>
-						<div class="orbit-item trigger">
-							<a href="http://deflamo.dev/apyrum/labb-och-arbetsprocess/">
-								<h2>Det ska vara smidigt att byta teknologi. </h2>
-								<p>Därför har Deflamo ett nära samarbete med dig som kund under hela skiftet. I vårt eget labb genomför vi alla nödvändiga tester.</p>
-							</a>
-						</div>
-						<div class="orbit-item trigger">
-							<a href="http://deflamo.dev/applikationer/vara-utvecklingsapplikationer/">
-								<h2>Vilken applikation passar din verksamhet?</h2>
-								<p>Vårt flamskyddsmedel Apyrum har utvecklats för att passa en rad olika material och användningsområden.</p>
-							</a>
-						</div>
-
-						<!-- becouse of :last-child specific width -->
-						<div class="orbit-item hide"></div>
-					</div>
 
 					<h1 class="entry-title"><?php //the_title(); ?></h1>
 

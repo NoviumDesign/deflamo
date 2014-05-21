@@ -25,7 +25,7 @@
 
 		<div class="headerinner">
 			<div class="site-branding">
-				<a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/apyrum-logo.png"></a>
+				<a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/apyrum-logo.png"></a>
 			</div>
 		</div>
 
@@ -37,8 +37,8 @@
 
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 					<ul class="language">
-						<li><a href="#">Engelska</a></li>
-						<li><a href="#">Svenska</a></li>
+						<li class=""><a href="#">Engelska</a></li>
+						<li class="active"><a href="#">Svenska</a></li>
 					</ul>
 				</nav><!-- #site-navigation -->
 			</div>
