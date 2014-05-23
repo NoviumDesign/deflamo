@@ -18,20 +18,21 @@
     color: black
     padding: 5px 10px 5px 10px
 
-ul.language
-  position: absolute
-  top: -34px
-  right: 75px
+.lang_sel_list_horizontal //Language selector from WPML
 
-  li
+  ul
+    position: absolute
+    bottom: 31px
+    right: 75px
+
+  li.icl-en, li.icl-sv
     background-color: #FFFFFF
-    opacity: 0.6
     border-radius: 5px 5px 0 0
     margin: 0px 5px 0px 5px
     padding: 0px 5px 0px 5px
 
-    &.active
-      opacity: 1
+  a
+    font-size: 1em !important
 
 ul.sub-menu,
 ul.children

@@ -1,10 +1,10 @@
 .two-columns
-  
-  .entry-content
-    +column-count(2)
 
-  h1
-    +column-span(all)
+  .first-column
+    @include span(1 of 2 1/10)
+
+  .second-column
+    @include span(1 last of 2 1/10)
 
   .span-columns
-    +column-span(all)
+    @include span(2 last of 2)

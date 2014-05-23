@@ -25,7 +25,7 @@
 
 		<div class="headerinner">
 			<div class="site-branding">
-				<a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/apyrum-logo.png"></a>
+				<a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/apyrum-logo-white.png"></a>
 			</div>
 		</div>
 

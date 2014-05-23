@@ -122,13 +122,13 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/images\/apyrum-logo.png": {
+	"\/images\/apyrum-logo-white.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4219,
-		"inputAbbreviatedPath": "\/images\/apyrum-logo.png",
-		"outputAbbreviatedPath": "\/images\/apyrum-logo.png",
+		"initialSize": 1310,
+		"inputAbbreviatedPath": "\/images\/apyrum-logo-white.png",
+		"outputAbbreviatedPath": "\/images\/apyrum-logo-white.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1578,6 +1578,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/sidebar-language-switch.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sidebar-language-switch.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/sidebar-nyheter.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -2322,7 +2331,7 @@
 			"flagValue": -1
 			},
 		"compress": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"conditionals": {
