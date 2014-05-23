@@ -36,9 +36,9 @@
 					<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_s' ); ?></a>
 
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-					<?php do_action('icl_language_selector'); ?>
 				</nav><!-- #site-navigation -->
 			</div>
+			<?php do_action('icl_language_selector'); ?><!-- WPML Selector -->
 		</div>
 
 	</header><!-- #masthead -->

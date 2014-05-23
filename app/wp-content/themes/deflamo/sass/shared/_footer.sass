@@ -31,7 +31,7 @@ footer.site-footer
       > a:first-child
         font-size: 1.3em
         color: #000000 !important
-        font-weight: 700
+        font-family: 'HelveticaNeueBold'
         margin-bottom: 5px
     
     li
@@ -54,7 +54,7 @@ footer.site-footer
 
   h2, h1
     font-size: 1.3em
-    font-weight: 700
+    font-family: 'HelveticaNeueBold'
     color: #000000
     margin-bottom: 5px
 
@@ -71,10 +71,13 @@ footer.site-footer
 .company-brand
   @include span(6 of 12)
 
+    object
+      height: 45px
+
 .copyright
   @include span(6 last of 12)
 
   p
     color: $copyright-color
     text-align: right
-    padding-top: 10px
+    padding-top: 20px

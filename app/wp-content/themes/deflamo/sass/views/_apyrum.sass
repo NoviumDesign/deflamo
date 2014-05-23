@@ -1,10 +1,13 @@
 .two-columns
 
-  .first-column
-    @include span(1 of 2 1/10)
+  article
+    @include span(12)
 
-  .second-column
-    @include span(1 last of 2 1/10)
+    .first-column
+      @include span(1 of 2 1/10)
 
-  .span-columns
-    @include span(2 last of 2)
+    .second-column
+      @include span(1 last of 2 1/10)
+
+    .span-columns
+      @include span(2 last of 2)

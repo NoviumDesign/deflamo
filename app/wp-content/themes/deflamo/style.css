@@ -645,6 +645,18 @@ object {
 .gallery-columns-9 .gallery-item {
   max-width: 11.11%; }
 
+@font-face {
+  font-family: "HelveticaNeueCondensedBold";
+  src: url("/fonts/helveticaneue-condensedbold/helveticaneue-condensedbold.eot");
+  src: url("/fonts/helveticaneue-condensedbold/helveticaneue-condensedbold.eot") format("embedded-opentype"), url("fonts/helveticaneue-condensedbold/helveticaneue-condensedbold.woff") format("woff"), url("fonts/helveticaneue-condensedbold/helveticaneue-condensedbold.ttf") format("truetype"), url("fonts/helveticaneue-condensedbold/helveticaneue-condensedbold.svg#HelveticaNeueCondensedBold") format("svg"); }
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("/fonts/helveticaneue/helveticaneue.eot");
+  src: url("/fonts/helveticaneue/helveticaneue.eot") format("embedded-opentype"), url("fonts/helveticaneue/helveticaneue.woff") format("woff"), url("fonts/helveticaneue/helveticaneue.ttf") format("truetype"), url("fonts/helveticaneue/helveticaneue.svg#HelveticaNeue") format("svg"); }
+@font-face {
+  font-family: "HelveticaNeueBold";
+  src: url("/fonts/helveticaneue-bold/helveticaneue-bold.eot");
+  src: url("/fonts/helveticaneue-bold/helveticaneue-bold.eot") format("embedded-opentype"), url("fonts/helveticaneue-bold/helveticaneue-bold.woff") format("woff"), url("fonts/helveticaneue-bold/helveticaneue-bold.ttf") format("truetype"), url("fonts/helveticaneue-bold/helveticaneue-bold.svg#HelveticaNeueBold") format("svg"); }
 .clearfix {
   display: inline-block; }
   .clearfix:after {
@@ -679,8 +691,9 @@ header.site-header {
   margin-left: 0;
   margin-right: 0;
   height: 75px; }
-  .site-branding img {
-    margin-top: 15px; }
+  .site-branding img, .site-branding object {
+    margin-top: 15px;
+    height: 45px; }
 
 .navcontainer {
   background-color: white; }
@@ -708,17 +721,27 @@ header.site-header {
     color: black;
     padding: 5px 10px 5px 10px; }
 
-.lang_sel_list_horizontal ul {
-  position: absolute;
-  bottom: 31px;
-  right: 75px; }
-.lang_sel_list_horizontal li.icl-en, .lang_sel_list_horizontal li.icl-sv {
-  background-color: white;
-  border-radius: 5px 5px 0 0;
-  margin: 0px 5px 0px 5px;
-  padding: 0px 5px 0px 5px; }
-.lang_sel_list_horizontal a {
-  font-size: 1em !important; }
+#lang_sel_list {
+  height: 0; }
+  #lang_sel_list ul {
+    position: absolute;
+    bottom: 34px;
+    right: 75px; }
+  #lang_sel_list li {
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+    margin: 0px 5px 0px 5px !important;
+    padding: 2px 7px 2px 7px !important; }
+    #lang_sel_list li:hover {
+      background-color: black; }
+      #lang_sel_list li:hover a {
+        font-family: "HelveticaNeue" !important;
+        color: white !important;
+        background-color: black; }
+  #lang_sel_list a {
+    color: black !important;
+    font-size: 1em;
+    padding: 5px 10px 5px 10px; }
 
 ul.sub-menu,
 ul.children {
@@ -731,12 +754,12 @@ ul.children {
   ul.children li:hover a {
     color: white !important; }
 
-body {
-  font-size: 14px; }
+* {
+  font-family: "HelveticaNeue"; }
 
 h1 {
   font-size: 2em;
-  font-weight: bold;
+  font-family: "HelveticaNeueBold";
   color: #398740; }
   h1 a {
     color: black;
@@ -745,13 +768,16 @@ h1 {
       color: black; }
 
 h2 {
-  font-weight: 700;
+  font-family: "HelveticaNeueBold";
   font-size: 1.4em; }
 
 h3 {
-  font-weight: 700; }
+  font-family: "HelveticaNeueBold"; }
 
-table, tr, th, td {
+b {
+  font-family: "HelveticaNeueBold"; }
+
+tr {
   border-top: 1px solid #dedede;
   border-bottom: 1px solid #dedede; }
 
@@ -800,7 +826,8 @@ iframe {
   height: 1000px; }
 
 .hero {
-  height: 235px; }
+  height: 235px;
+  background-position: center; }
 
 .hero-container {
   max-width: 1200px;
@@ -817,7 +844,7 @@ iframe {
   margin-right: 1.69492%; }
   .hero-tagline h1 {
     color: white;
-    font-size: 3.3em;
+    font-size: 2.5em;
     line-height: 1.1em;
     text-transform: uppercase;
     margin-bottom: 0; }
@@ -831,18 +858,23 @@ iframe {
   .hero-icon object {
     margin-top: 10px; }
 
-.two-columns .first-column {
-  width: 47.61905%;
-  float: left;
-  margin-right: 4.7619%; }
-.two-columns .second-column {
-  width: 47.61905%;
-  float: right;
-  margin-right: 0; }
-.two-columns .span-columns {
+.two-columns article {
   width: 100%;
-  float: right;
+  float: left;
+  margin-left: 0;
   margin-right: 0; }
+  .two-columns article .first-column {
+    width: 47.61905%;
+    float: left;
+    margin-right: 4.7619%; }
+  .two-columns article .second-column {
+    width: 47.61905%;
+    float: right;
+    margin-right: 0; }
+  .two-columns article .span-columns {
+    width: 100%;
+    float: right;
+    margin-right: 0; }
 
 .portraits {
   width: 100%;
@@ -938,6 +970,9 @@ a.more-link {
     color: black;
     text-decoration: underline; }
 
+article.nyhet-artikel h1 {
+  text-transform: uppercase; }
+
 .full-width {
   width: 100%;
   float: left;
@@ -985,7 +1020,7 @@ a.more-link {
       .sidebar ul li a {
         color: white;
         text-decoration: none;
-        font-weight: 700; }
+        font-family: "HelveticaNeueBold"; }
       .sidebar ul li a:hover {
         text-decoration: underline; }
   .sidebar ul.contact {
@@ -1023,7 +1058,7 @@ img.orbit-image {
   position: relative;
   background-color: black;
   padding: 15px;
-  min-height: 190px; }
+  min-height: 200px; }
   .orbit-item:last-child {
     width: 32.20339%;
     float: right;
@@ -1055,7 +1090,7 @@ img.orbit-image {
     margin: 0; }
   .orbit-item h2 {
     font-size: 1.4em;
-    font-weight: 700;
+    font-family: "HelveticaNeueCondensedBold";
     text-transform: uppercase; }
   .orbit-item a {
     text-decoration: none; }
@@ -1125,7 +1160,7 @@ footer.site-footer {
       .footer-container span.bottomnav ul.menu > li > a:first-child {
         font-size: 1.3em;
         color: black !important;
-        font-weight: 700;
+        font-family: "HelveticaNeueBold";
         margin-bottom: 5px; }
     .footer-container span.bottomnav li {
       float: none;
@@ -1145,7 +1180,7 @@ footer.site-footer {
   margin-right: 2.04082%; }
   .company-links h2, .company-links h1 {
     font-size: 1.3em;
-    font-weight: 700;
+    font-family: "HelveticaNeueBold";
     color: black;
     margin-bottom: 5px; }
   .company-links ul {
@@ -1161,6 +1196,8 @@ footer.site-footer {
   width: 49.15254%;
   float: left;
   margin-right: 1.69492%; }
+  .company-brand object {
+    height: 45px; }
 
 .copyright {
   width: 49.15254%;
@@ -1169,4 +1206,4 @@ footer.site-footer {
   .copyright p {
     color: #9c9c9c;
     text-align: right;
-    padding-top: 10px; }
+    padding-top: 20px; }

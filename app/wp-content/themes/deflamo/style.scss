@@ -14,6 +14,7 @@ Tags:
 @import "sass/wp-reset.scss";
 @import "sass/vendor/susygrids/susy";
 @import "sass/shared/gridsettings";
+@import "sass/shared/fontface";
 @import "sass/lib/common.sass";
 @import "sass/shared/header";
 @import "sass/shared/nav";
@@ -22,6 +23,7 @@ Tags:
 @import "sass/views/apyrum";
 @import "sass/views/kontakt";
 @import "sass/views/nyheter";
+@import "sass/views/nyhet-artikel";
 @import "sass/views/full-bred";
 @import "sass/views/arkiv";
 @import "sass/shared/sidebar";

@@ -25,7 +25,7 @@
 
 		<div class="headerinner">
 			<div class="site-branding">
-				<a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/apyrum-logo-white.png"></a>
+				<a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/apyrum-logo-white.svg"></a>
 			</div>
 		</div>
 
@@ -42,6 +42,7 @@
 					</ul>
 				</nav><!-- #site-navigation -->
 			</div>
+			<?php do_action('icl_language_selector'); ?><!-- WPML Selector -->
 		</div>
 
 	</header><!-- #masthead -->

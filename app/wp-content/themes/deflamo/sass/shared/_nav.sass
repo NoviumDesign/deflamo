@@ -9,30 +9,41 @@
   @include span(12)
 
   li:hover
-    background-color: black
+    background-color: #000000
 
     a
-      color: white
+      color: #FFFFFF
 
   a
-    color: black
+    color: #000000
     padding: 5px 10px 5px 10px
 
-.lang_sel_list_horizontal //Language selector from WPML
+#lang_sel_list
+  height: 0
 
   ul
     position: absolute
-    bottom: 31px
+    bottom: 34px
     right: 75px
 
-  li.icl-en, li.icl-sv
+  li
     background-color: #FFFFFF
     border-radius: 5px 5px 0 0
-    margin: 0px 5px 0px 5px
-    padding: 0px 5px 0px 5px
+    margin: 0px 5px 0px 5px !important
+    padding: 2px 7px 2px 7px !important
+
+    &:hover
+      background-color: #000000
+
+      a
+        font-family: 'HelveticaNeue' !important
+        color: #FFFFFF !important
+        background-color: #000000
 
   a
-    font-size: 1em !important
+    color: #000000 !important
+    font-size: 1em
+    padding: 5px 10px 5px 10px
 
 ul.sub-menu,
 ul.children
