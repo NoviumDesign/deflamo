@@ -690,10 +690,17 @@ header.site-header {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  height: 75px; }
+  height: 90px; }
   .site-branding img, .site-branding object {
-    margin-top: 15px;
+    margin-top: 35px;
     height: 45px; }
+
+object.deflamo-logo {
+  width: 120px;
+  height: 30px;
+  position: absolute;
+  top: 82px;
+  right: 320px; }
 
 .navcontainer {
   background-color: white; }
@@ -731,17 +738,17 @@ header.site-header {
     background-color: white;
     border-radius: 5px 5px 0 0;
     margin: 0px 5px 0px 5px !important;
-    padding: 2px 7px 2px 7px !important; }
+    padding: 4px 10px 4px 10px !important; }
     #lang_sel_list li:hover {
       background-color: black; }
       #lang_sel_list li:hover a {
-        font-family: "HelveticaNeue" !important;
         color: white !important;
         background-color: black; }
   #lang_sel_list a {
+    font-family: "HelveticaNeue" !important;
     color: black !important;
     font-size: 1em;
-    padding: 5px 10px 5px 10px; }
+    padding: 5px 10px 5px 10px !important; }
 
 ul.sub-menu,
 ul.children {
@@ -749,7 +756,7 @@ ul.children {
   top: 2.1em !important; }
   ul.sub-menu li a,
   ul.children li a {
-    color: black !important; }
+    color: #398740 !important; }
   ul.sub-menu li:hover a,
   ul.children li:hover a {
     color: white !important; }
@@ -774,8 +781,9 @@ h2 {
 h3 {
   font-family: "HelveticaNeueBold"; }
 
-b {
-  font-family: "HelveticaNeueBold"; }
+b, strong {
+  font-family: "HelveticaNeueBold";
+  font-weight: initial; }
 
 tr {
   border-top: 1px solid #dedede;
@@ -983,6 +991,10 @@ article.nyhet-artikel h1 {
     float: left;
     margin-left: 0;
     margin-right: 0; }
+    .full-width article h1 {
+      width: 49.15254%;
+      float: left;
+      margin-right: 1.69492%; }
 
 .archive article {
   border-bottom: none;
