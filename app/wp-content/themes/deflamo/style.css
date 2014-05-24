@@ -704,8 +704,8 @@ object.deflamo-logo {
   width: 120px;
   height: 30px;
   position: absolute;
-  top: 82px;
-  right: 320px; }
+  top: 74px;
+  right: 430px; }
 
 .navcontainer {
   background-color: white; }
@@ -1031,19 +1031,15 @@ article.nyhet-artikel h1 {
   margin-right: 0;
   background-color: #398740;
   padding: 20px; }
-  .sidebar aside {
-    border-bottom: 4px solid white;
-    padding-bottom: 30px; }
-    .sidebar aside:last-child {
-      border: none;
-      padding: 0; }
-  .sidebar h1, .sidebar h2 {
+  .sidebar h1, .sidebar h2, .sidebar h3 {
     color: white;
     text-transform: uppercase; }
   .sidebar h1 {
     font-size: 1.6em;
     line-height: 1.2em;
     margin-bottom: 10px; }
+  .sidebar h3 {
+    font-family: "HelveticaNeue"; }
   .sidebar ul {
     margin: 0px 0px 30px 0px;
     list-style-type: none; }
@@ -1055,10 +1051,20 @@ article.nyhet-artikel h1 {
         font-family: "HelveticaNeueBold"; }
       .sidebar ul li a:hover {
         text-decoration: underline; }
+  .sidebar ul.latest-news {
+    margin-top: -14px; }
+    .sidebar ul.latest-news li {
+      margin-bottom: 10px;
+      padding-bottom: 10px; }
+      .sidebar ul.latest-news li:first-child {
+        border-bottom: 4px solid white;
+        margin-bottom: 15px;
+        padding-bottom: 15px; }
+      .sidebar ul.latest-news li a {
+        text-transform: uppercase; }
   .sidebar ul.contact {
     margin: 0; }
     .sidebar ul.contact li {
-      padding: 5px;
       text-align: center; }
       .sidebar ul.contact li a, .sidebar ul.contact li object, .sidebar ul.contact li .phone {
         vertical-align: middle;
@@ -1071,6 +1077,12 @@ article.nyhet-artikel h1 {
     background: none; }
     .sidebar .widget ul.sub-menu li a, .sidebar .widget-nav-menu ul.sub-menu li a {
       color: white !important; }
+  .sidebar .multiple-widget-container aside {
+    border-bottom: 4px solid white;
+    padding-bottom: 30px; }
+    .sidebar .multiple-widget-container aside:last-child {
+      border: none;
+      padding: 0; }
 
 img.orbit-image {
   width: 100%;

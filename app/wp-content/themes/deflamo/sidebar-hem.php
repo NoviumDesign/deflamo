@@ -6,7 +6,7 @@
  */
 ?>
 	<div id="secondary" class="widget-area" role="complementary">
-		<?php if ( ! dynamic_sidebar( 'sidebar-language-switch' ) ) : ?>
+		<?php if ( ! dynamic_sidebar( 'sidebar-hem' ) ) : ?>
 
 			<aside id="search" class="widget widget_search">
 				<?php get_search_form(); ?>

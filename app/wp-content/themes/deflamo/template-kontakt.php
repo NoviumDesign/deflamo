@@ -54,16 +54,8 @@ get_header(); ?>
 				</div>
 
 				<div class="sidebar">
-					<h1>Kontakta Deflamo</h1>
-					<section>
-						<h2>Adress</h2>
-						<ul>
-							<li>Deflamo AB</li>
-							<li>Fakturavägen 4</li>
-							<li>SE-175 62 JÄRFÄLLA</li>
-							<li>Sverige</li>
-						</ul>
-					</section>
+					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-kontakt') ) : ?>
+					<?php endif; ?>
 					<ul class="contact">
 						<li><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/phone.svg">Your browser does not support SVG</object><span class="phone">08-631 91 80</span></li>
 						<li class="email"><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/mail.svg">Your browser does not support SVG</object><a href="mailto:info@deflamo.se">info@deflamo.se</a></li>

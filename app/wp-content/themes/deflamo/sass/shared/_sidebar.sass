@@ -3,15 +3,7 @@
   background-color: $green-color
   padding: 20px
 
-  aside
-    border-bottom: 4px solid #FFFFFF
-    padding-bottom: 30px
-
-    &:last-child
-      border: none
-      padding: 0
-
-  h1, h2
+  h1, h2, h3
     color: #FFFFFF
     text-transform: uppercase
 
@@ -19,6 +11,9 @@
     font-size: 1.6em
     line-height: 1.2em
     margin-bottom: 10px
+
+  h3
+    font-family: 'HelveticaNeue'
 
   ul
     margin: 0px 0px 30px 0px
@@ -35,11 +30,25 @@
       a:hover
         text-decoration: underline
 
+  ul.latest-news
+    margin-top: -14px
+
+    li
+      margin-bottom: 10px
+      padding-bottom: 10px
+
+      &:first-child
+        border-bottom: 4px solid #FFFFFF
+        margin-bottom: 15px
+        padding-bottom: 15px
+
+      a
+        text-transform: uppercase
+
   ul.contact
     margin: 0
 
     li
-      padding: 5px
       text-align: center
 
       a, object, .phone
@@ -59,3 +68,13 @@
 
       li a
         color: #FFFFFF !important
+
+  .multiple-widget-container
+
+    aside
+      border-bottom: 4px solid #FFFFFF
+      padding-bottom: 30px
+
+      &:last-child
+        border: none
+        padding: 0

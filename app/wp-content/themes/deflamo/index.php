@@ -54,10 +54,10 @@ get_header(); ?>
 
 
 				<div class="sidebar">
-					<section class="multiple-widget-container">
+					<div class="multiple-widget-container">
 						<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-nyheter') ) : ?>
 						<?php endif; ?>
-					</section>
+					</div>
 					<ul class="contact">
 						<li><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/phone.svg">Your browser does not support SVG</object><span class="phone">08-631 91 80</span></li>
 						<li class="email"><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/mail.svg">Your browser does not support SVG</object><a href="mailto:info@deflamo.se">info@deflamo.se</a></li>

@@ -47,7 +47,14 @@ get_header(); ?>
 				</div>
 
 				<div class="sidebar">
-					<?php get_sidebar(); ?>
+					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-hem') ) : ?>
+					<?php endif; ?>
+					<ul class="latest-news">
+					  <?php $the_query = new WP_Query( 'showposts=4' ); ?>
+					  <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+						  <li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a><br><?php echo substr(strip_tags($post->post_content), 0, 70 );?> [...]</li>
+					  <?php endwhile;?>
+					</ul>
 					<ul class="contact">
 						<li><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/phone.svg">Your browser does not support SVG</object><span class="phone">08-631 91 80</span></li>
 						<li class="email"><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/mail.svg">Your browser does not support SVG</object><a href="mailto:info@deflamo.se">info@deflamo.se</a></li>

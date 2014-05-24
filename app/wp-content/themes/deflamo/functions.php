@@ -113,8 +113,8 @@ function _s_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Språkbyte Meny', '_s' ),
-		'id'            => 'sidebar-language-switch',
+		'name'          => __( 'Sidebar Hem', '_s' ),
+		'id'            => 'sidebar-hem',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
