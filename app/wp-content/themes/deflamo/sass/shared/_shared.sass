@@ -1,10 +1,12 @@
-*
+body
   font-family: 'HelveticaNeue'
+  font-weight: normal
 
 h1
   font-size: 2em
   font-family: 'HelveticaNeueBold'
   color: $green-color
+  font-weight: normal
 
   a
     color: #000000
@@ -15,13 +17,16 @@ h1
 h2
   font-family: 'HelveticaNeueBold'
   font-size: 1.4em
+  font-weight: normal
 
 h3
   font-family: 'HelveticaNeueBold'
+  font-weight: normal
 
-b, strong
+b,
+strong
   font-family: 'HelveticaNeueBold'
-  font-weight: initial
+  font-weight: normal
 
 tr
   border-top: 1px solid $light-grey-color
@@ -43,7 +48,7 @@ ul
   @include container (1200px)
 
 .main-content
-  @include span(9)
+  @include span(18 of 24)
 
   article
     @include span(10)

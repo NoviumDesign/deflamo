@@ -674,7 +674,11 @@ html[xmlns] .clearfix {
   height: 1%; }
 
 header.site-header {
-  background-color: #398740; }
+  background-color: #398740;
+  background-image: url("images/menu-pattern.svg");
+  background-repeat: no-repeat;
+  background-position-x: 800px;
+  background-position-y: -393px; }
 
 .headerinner {
   max-width: 1200px;
@@ -693,7 +697,8 @@ header.site-header {
   height: 90px; }
   .site-branding img, .site-branding object {
     margin-top: 35px;
-    height: 45px; }
+    height: 33px;
+    width: auto; }
 
 object.deflamo-logo {
   width: 120px;
@@ -716,6 +721,7 @@ object.deflamo-logo {
 
 .main-navigation {
   position: relative;
+  margin-left: -11px !important;
   width: 100%;
   float: left;
   margin-left: 0;
@@ -733,10 +739,10 @@ object.deflamo-logo {
   #lang_sel_list ul {
     position: absolute;
     bottom: 34px;
-    right: 75px; }
+    right: 193px; }
   #lang_sel_list li {
     background-color: white;
-    border-radius: 5px 5px 0 0;
+    border-radius: 8px 8px 0 0;
     margin: 0px 5px 0px 5px !important;
     padding: 4px 10px 4px 10px !important; }
     #lang_sel_list li:hover {
@@ -747,8 +753,8 @@ object.deflamo-logo {
   #lang_sel_list a {
     font-family: "HelveticaNeue" !important;
     color: black !important;
-    font-size: 1em;
-    padding: 5px 10px 5px 10px !important; }
+    font-size: 15px;
+    padding: 3px 7px 3px 7px !important; }
 
 ul.sub-menu,
 ul.children {
@@ -761,13 +767,15 @@ ul.children {
   ul.children li:hover a {
     color: white !important; }
 
-* {
-  font-family: "HelveticaNeue"; }
+body {
+  font-family: "HelveticaNeue";
+  font-weight: normal; }
 
 h1 {
   font-size: 2em;
   font-family: "HelveticaNeueBold";
-  color: #398740; }
+  color: #398740;
+  font-weight: normal; }
   h1 a {
     color: black;
     text-decoration: none; }
@@ -776,24 +784,27 @@ h1 {
 
 h2 {
   font-family: "HelveticaNeueBold";
-  font-size: 1.4em; }
+  font-size: 1.4em;
+  font-weight: normal; }
 
 h3 {
-  font-family: "HelveticaNeueBold"; }
-
-b, strong {
   font-family: "HelveticaNeueBold";
-  font-weight: initial; }
+  font-weight: normal; }
+
+b,
+strong {
+  font-family: "HelveticaNeueBold";
+  font-weight: normal; }
 
 tr {
-  border-top: 1px solid #dedede;
-  border-bottom: 1px solid #dedede; }
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3; }
 
 th, td {
   padding: 5px 10px 5px 10px; }
 
 tr:nth-child(2n+2) {
-  background-color: #dedede;
+  background-color: #f3f3f3;
   border-color: #787878; }
 
 ul {
@@ -811,9 +822,9 @@ ul {
     clear: both; }
 
 .main-content {
-  width: 74.57627%;
+  width: 74.78992%;
   float: left;
-  margin-right: 1.69492%; }
+  margin-right: 0.84034%; }
   .main-content article {
     width: 83.05085%;
     float: left;
@@ -834,7 +845,7 @@ iframe {
   height: 1000px; }
 
 .hero {
-  height: 235px;
+  height: 215px;
   background-position: center; }
 
 .hero-container {
@@ -846,14 +857,21 @@ iframe {
     display: block;
     clear: both; }
 
+.heropatternholder {
+  height: 215px;
+  background-image: url("images/menu-pattern.svg");
+  background-repeat: no-repeat;
+  background-position-x: 797px;
+  background-position-y: -518px; }
+
 .hero-tagline {
   width: 49.15254%;
   float: left;
   margin-right: 1.69492%; }
   .hero-tagline h1 {
     color: white;
-    font-size: 2.5em;
-    line-height: 1.1em;
+    font-size: 2.3em;
+    line-height: 1.15em;
     text-transform: uppercase;
     margin-bottom: 0; }
     .hero-tagline h1:first-child {
@@ -864,7 +882,9 @@ iframe {
   float: right;
   margin-right: 0; }
   .hero-icon object {
-    margin-top: 10px; }
+    margin-top: 10px;
+    width: auto;
+    height: 198px; }
 
 .two-columns article {
   width: 100%;
@@ -902,42 +922,42 @@ iframe {
       list-style-type: none;
       margin: 10px 20px 0px 20px; }
 
-.contact {
+.wpcf7 {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0; }
-  .contact section.contact-form {
+  .wpcf7 section.contact-form {
     width: 83.05085%;
     float: left;
     margin-left: 8.47458%;
     margin-right: -100%; }
-    .contact section.contact-form span {
+    .wpcf7 section.contact-form span {
       width: 100%;
       float: left;
       margin-left: 0;
       margin-right: 0;
       position: relative;
       margin: 10px 0px 10px 0px; }
-    .contact section.contact-form label {
+    .wpcf7 section.contact-form label {
       width: 18.36735%;
       float: left;
       margin-right: 2.04082%;
       text-align: right;
       margin-top: 4px; }
-    .contact section.contact-form input, .contact section.contact-form textarea {
+    .wpcf7 section.contact-form input, .wpcf7 section.contact-form textarea {
       width: 69.38776%;
       float: left;
       margin-right: 2.04082%; }
-    .contact section.contact-form input, .contact section.contact-form textarea, .contact section.contact-form button {
-      border: 1px solid #dedede;
+    .wpcf7 section.contact-form input, .wpcf7 section.contact-form textarea, .wpcf7 section.contact-form button {
+      border: 1px solid #f3f3f3;
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
       border-radius: 0; }
-    .contact section.contact-form textarea {
+    .wpcf7 section.contact-form textarea {
       resize: none;
       height: 100px; }
-    .contact section.contact-form button {
+    .wpcf7 section.contact-form input[type="submit"] {
       width: 8.16327%;
       float: right;
       margin-right: 0;
@@ -1006,7 +1026,7 @@ article.nyhet-artikel h1 {
     text-transform: uppercase; }
 
 .sidebar {
-  width: 23.72881%;
+  width: 20.16807%;
   float: right;
   margin-right: 0;
   background-color: #398740;
@@ -1134,7 +1154,7 @@ img.orbit-image {
 
 footer.site-footer {
   position: relative;
-  background-color: #dedede;
+  background-color: #f3f3f3;
   padding-top: 30px; }
   footer.site-footer:after {
     bottom: 100%;
@@ -1145,7 +1165,7 @@ footer.site-footer {
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-bottom-color: #dedede;
+    border-bottom-color: #f3f3f3;
     border-width: 20px;
     margin-left: -20px; }
 

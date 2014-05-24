@@ -11,8 +11,11 @@
       list-style-type: none
       margin: 10px 20px 0px 20px
 
-.contact
+.wpcf7
   @include span(full)
+
+  form
+    @include clearfix()
 
   section.contact-form
     @include span(isolate 10 at 2)
@@ -38,7 +41,7 @@
       resize: none
       height: 100px
 
-    button
+    input[type="submit"]
       @include span(1 of 10 last)
       background-color: #FFFFFF
       position: absolute
