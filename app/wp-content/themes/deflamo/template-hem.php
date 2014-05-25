@@ -21,14 +21,50 @@ get_header(); ?>
 							<h1><?php the_field('image_text'); ?></h1>
 						</div>
 						<div class="hero-icon">
-							<object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/flamskyddande.svg">Your browser does not support SVG</object>
+							<img src="<?php bloginfo('template_directory'); ?>/icons/flamskyddande.svg">
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="content-container">
+
 				<div class="main-content">
+
+					<div class="image-carousel clearfix">
+						<div class="image active">
+							<div class="text">1</div>
+							<img class="orbit-image" src="<?php the_field('img1'); ?>" alt="" />
+						</div>
+
+						<div class="image">
+							<div class="text">2</div>
+							<img class="orbit-image" src="<?php the_field('img2'); ?>" alt="" />
+						</div>
+
+						<div class="image">
+							<div class="text">3</div>
+							<img class="orbit-image" src="<?php the_field('img3'); ?>" alt="" />
+						</div>
+
+						<div class="orbit-item trigger active">
+							<h2><?php the_field('headline1'); ?></h2>
+							<?php the_field('text1'); ?>
+						</div>
+
+						<div class="orbit-item trigger">
+							<h2><?php the_field('headline2'); ?></h2>
+							<?php the_field('text2'); ?>
+						</div>
+
+						<div class="orbit-item trigger">
+							<h2><?php the_field('headline3'); ?></h2>
+							<?php the_field('text3'); ?>
+						</div>
+
+						<!-- becouse of :last-child specific width -->
+						<div class="orbit-item hide"></div>
+					</div>
 
 					<h1 class="entry-title"><?php //the_title(); ?></h1>
 

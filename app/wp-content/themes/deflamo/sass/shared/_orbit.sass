@@ -1,13 +1,14 @@
 img.orbit-image
-  @include span(12)
-  width: 895px
+  @include span(full isolate)
+  width: 897px !important
 
 .orbit-item
-  @include span(4 inside)
+  @include span(4 inside isolate)
   position: relative
   background-color: #000000
   padding: 15px
-  min-height: 200px
+  min-height: 175px
+  color: #FFF
   &:last-child
     @include span(4 last)
 
@@ -36,7 +37,6 @@ img.orbit-image
     cursor: pointer
 
   h2, p
-    color: #FFFFFF
     margin: 0
 
   h2
@@ -53,7 +53,7 @@ img.orbit-image
 .image-carousel
   position: relative
   margin-bottom: 30px
-  @include span(12 of 10)
+  @include span(full)
 
   .image
     position: absolute

@@ -12,26 +12,31 @@
       margin: 10px 20px 0px 20px
 
 .wpcf7
-  @include span(full)
+  @include span(12)
+  @include clearfix()
 
   form
     @include clearfix()
-
-  section.contact-form
     @include span(isolate 10 at 2)
 
-    span
+    .wpcf7-response-output
+      @include span(isolate 10 at 2)
+
+    .wpcf7-not-valid-tip
+      @include span(full)
+
+    .field-row
       @include span (full)
       position: relative
       margin: 10px 0px 10px 0px
 
-    label
-      @include span(2 of 10)
-      text-align: right
-      margin-top: 4px
+      label
+        @include span(2 of 10)
+        text-align: right
+        margin-top: 4px
 
-    input, textarea
-      @include span(7 of 10)
+      input, textarea
+        @include span(8 last of 10)
 
     input, textarea, button
       border: 1px solid $light-grey-color
@@ -41,8 +46,9 @@
       resize: none
       height: 100px
 
-    input[type="submit"]
-      @include span(1 of 10 last)
-      background-color: #FFFFFF
-      position: absolute
-      bottom: 0
+    .submit-row
+      text-align: right 
+
+      input[type="submit"]
+        float: right
+        background-color: #FFFFFF

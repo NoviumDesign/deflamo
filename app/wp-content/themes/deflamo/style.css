@@ -678,7 +678,7 @@ header.site-header {
   background-image: url("images/menu-pattern.svg");
   background-repeat: no-repeat;
   background-position-x: 800px;
-  background-position-y: -393px; }
+  background-position-y: -473px; }
 
 .headerinner {
   max-width: 1200px;
@@ -862,7 +862,7 @@ iframe {
   background-image: url("images/menu-pattern.svg");
   background-repeat: no-repeat;
   background-position-x: 797px;
-  background-position-y: -518px; }
+  background-position-y: -598px; }
 
 .hero-tagline {
   width: 49.15254%;
@@ -881,7 +881,7 @@ iframe {
   width: 23.72881%;
   float: right;
   margin-right: 0; }
-  .hero-icon object {
+  .hero-icon img {
     margin: 10px 0px 0px 30px;
     width: auto;
     height: 198px; }
@@ -927,43 +927,59 @@ iframe {
   float: left;
   margin-left: 0;
   margin-right: 0; }
-  .wpcf7 section.contact-form {
+  .wpcf7:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .wpcf7 form {
     width: 83.05085%;
     float: left;
     margin-left: 8.47458%;
     margin-right: -100%; }
-    .wpcf7 section.contact-form span {
+    .wpcf7 form:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .wpcf7 form .wpcf7-response-output {
+      width: 83.05085%;
+      float: left;
+      margin-left: 8.47458%;
+      margin-right: -100%; }
+    .wpcf7 form .wpcf7-not-valid-tip {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+    .wpcf7 form .field-row {
       width: 100%;
       float: left;
       margin-left: 0;
       margin-right: 0;
       position: relative;
       margin: 10px 0px 10px 0px; }
-    .wpcf7 section.contact-form label {
-      width: 18.36735%;
-      float: left;
-      margin-right: 2.04082%;
-      text-align: right;
-      margin-top: 4px; }
-    .wpcf7 section.contact-form input, .wpcf7 section.contact-form textarea {
-      width: 69.38776%;
-      float: left;
-      margin-right: 2.04082%; }
-    .wpcf7 section.contact-form input, .wpcf7 section.contact-form textarea, .wpcf7 section.contact-form button {
+      .wpcf7 form .field-row label {
+        width: 18.36735%;
+        float: left;
+        margin-right: 2.04082%;
+        text-align: right;
+        margin-top: 4px; }
+      .wpcf7 form .field-row input, .wpcf7 form .field-row textarea {
+        width: 79.59184%;
+        float: right;
+        margin-right: 0; }
+    .wpcf7 form input, .wpcf7 form textarea, .wpcf7 form button {
       border: 1px solid #f1f1f1;
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
       border-radius: 0; }
-    .wpcf7 section.contact-form textarea {
+    .wpcf7 form textarea {
       resize: none;
       height: 100px; }
-    .wpcf7 section.contact-form input[type="submit"] {
-      width: 8.16327%;
-      float: right;
-      margin-right: 0;
-      background-color: white;
-      position: absolute;
-      bottom: 0; }
+    .wpcf7 form .submit-row {
+      text-align: right; }
+      .wpcf7 form .submit-row input[type="submit"] {
+        float: right;
+        background-color: white; }
 
 .news h1 {
   font-size: 1.4em;
@@ -1099,7 +1115,7 @@ img.orbit-image {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  width: 895px; }
+  width: 897px !important; }
 
 .orbit-item {
   -moz-box-sizing: border-box;
@@ -1112,7 +1128,8 @@ img.orbit-image {
   position: relative;
   background-color: black;
   padding: 15px;
-  min-height: 200px; }
+  min-height: 175px;
+  color: white; }
   .orbit-item:last-child {
     width: 32.20339%;
     float: right;
@@ -1140,7 +1157,6 @@ img.orbit-image {
   .orbit-item:hover {
     cursor: pointer; }
   .orbit-item h2, .orbit-item p {
-    color: white;
     margin: 0; }
   .orbit-item h2 {
     font-size: 1.4em;
@@ -1155,9 +1171,10 @@ img.orbit-image {
 .image-carousel {
   position: relative;
   margin-bottom: 30px;
-  width: 120.40816%;
+  width: 100%;
   float: left;
-  margin-right: 2.04082%; }
+  margin-left: 0;
+  margin-right: 0; }
   .image-carousel .image {
     position: absolute;
     opacity: 0;

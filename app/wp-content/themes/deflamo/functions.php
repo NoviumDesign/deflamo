@@ -176,4 +176,13 @@ if ( function_exists( 'add_theme_support' ) ) {
 }
 if ( function_exists( 'add_image_size' ) ) { 
 	add_image_size( 'page_image' );
+	add_image_size( sizeorbit, 897, 233, true );
+}
+
+add_filter( 'image_size_names_choose', 'my_custom_sizes' );
+
+function my_custom_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'sizeorbit' => __('Beskuren för bildspelet på hem'),
+    ) );
 }
