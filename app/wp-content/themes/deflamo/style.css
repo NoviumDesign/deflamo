@@ -861,7 +861,8 @@ ol {
 
 .hero {
   height: 215px;
-  background-position: center; }
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .hero-container {
   max-width: 1200px;
@@ -1066,7 +1067,7 @@ article.nyhet-artikel h1 {
     color: white;
     text-transform: uppercase; }
   .sidebar h1 {
-    font-size: 1.6em;
+    font-size: 1.5em;
     line-height: 1.2em;
     margin-bottom: 10px; }
   .sidebar h3 {
@@ -1300,6 +1301,6 @@ footer.site-footer {
   float: right;
   margin-right: 0; }
   .copyright p {
-    color: #dfdfdf;
+    color: #d1d1d1;
     text-align: left;
     padding-top: 17px; }
