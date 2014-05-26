@@ -23,10 +23,15 @@ h3
   font-family: 'HelveticaNeueBold'
   font-weight: normal
 
-b,
-strong
+b, strong, th
   font-family: 'HelveticaNeueBold'
   font-weight: normal
+
+a
+  color: $red-color
+
+  &:visited
+    color: $red-color
 
 tr
   border-top: 1px solid $light-grey-color
@@ -35,12 +40,28 @@ tr
 th, td
   padding: 5px 10px 5px 10px
 
+tr > td:first-child
+  min-width: 305px
+
 tr:nth-child(2n+2)
   background-color: $light-grey-color
   border-color: $dark-grey-color
 
+table.no-background
+
+  tr
+    background: none
+    border: none
+
+  td
+    padding: 0
+    min-width: 0
+
 ul
   margin: 0px 0px 20px 20px
+
+ol
+  margin: 0px 0px 20px 30px
 
 .content-container
   margin-top: 30px
@@ -65,7 +86,3 @@ ul
     p
       line-height: 1.5em
       margin-bottom: 20px
-
-iframe
-  width: 100%
-  height: 1000px

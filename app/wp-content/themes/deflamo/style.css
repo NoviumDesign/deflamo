@@ -700,12 +700,12 @@ header.site-header {
     height: 33px;
     width: auto; }
 
-object.deflamo-logo {
+img.deflamo-logo {
   width: 120px;
   height: 30px;
   position: absolute;
   top: 74px;
-  right: 430px; }
+  right: 310px; }
 
 .navcontainer {
   background-color: white; }
@@ -733,13 +733,15 @@ object.deflamo-logo {
   .main-navigation a {
     color: black;
     padding: 5px 10px 5px 10px; }
+    .main-navigation a:visited {
+      color: black; }
 
 #lang_sel_list {
   height: 0; }
   #lang_sel_list ul {
     position: absolute;
     bottom: 34px;
-    right: 193px; }
+    right: 72px; }
   #lang_sel_list li {
     background-color: white;
     border-radius: 8px 8px 0 0;
@@ -791,10 +793,14 @@ h3 {
   font-family: "HelveticaNeueBold";
   font-weight: normal; }
 
-b,
-strong {
+b, strong, th {
   font-family: "HelveticaNeueBold";
   font-weight: normal; }
+
+a {
+  color: red; }
+  a:visited {
+    color: red; }
 
 tr {
   border-top: 1px solid #f1f1f1;
@@ -803,12 +809,25 @@ tr {
 th, td {
   padding: 5px 10px 5px 10px; }
 
+tr > td:first-child {
+  min-width: 305px; }
+
 tr:nth-child(2n+2) {
   background-color: #f1f1f1;
   border-color: #787878; }
 
+table.no-background tr {
+  background: none;
+  border: none; }
+table.no-background td {
+  padding: 0;
+  min-width: 0; }
+
 ul {
   margin: 0px 0px 20px 20px; }
+
+ol {
+  margin: 0px 0px 20px 30px; }
 
 .content-container {
   margin-top: 30px;
@@ -839,10 +858,6 @@ ul {
     .main-content article p {
       line-height: 1.5em;
       margin-bottom: 20px; }
-
-iframe {
-  width: 100%;
-  height: 1000px; }
 
 .hero {
   height: 215px;
@@ -882,7 +897,7 @@ iframe {
   float: right;
   margin-right: 0; }
   .hero-icon img {
-    margin: 10px 0px 0px 30px;
+    margin: 10px 0px 0px 60px;
     width: auto;
     height: 198px; }
 
@@ -1161,7 +1176,9 @@ img.orbit-image {
   .orbit-item h2 {
     font-size: 1.4em;
     font-family: "HelveticaNeueCondensedBold";
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    line-height: 1.3em;
+    margin-bottom: 10px; }
   .orbit-item a {
     text-decoration: none; }
 
@@ -1216,39 +1233,47 @@ footer.site-footer {
     content: " ";
     display: block;
     clear: both; }
-  .footer-container span.bottomnav {
-    width: 79.59184%;
-    float: right;
+  .footer-container .bottomnav {
+    width: 100%;
+    float: left;
+    margin-left: 0;
     margin-right: 0; }
-    .footer-container span.bottomnav ul.menu > li {
-      width: 21.05263%;
+    .footer-container .bottomnav ul.menu > li {
+      width: 16.66667%;
       float: left;
-      margin-right: 5.26316%; }
-      .footer-container span.bottomnav ul.menu > li:last-child {
-        width: 21.05263%;
+      margin-right: 4.16667%; }
+      .footer-container .bottomnav ul.menu > li:last-child {
+        width: 16.66667%;
         float: right;
         margin-right: 0; }
-      .footer-container span.bottomnav ul.menu > li > a:first-child {
+      .footer-container .bottomnav ul.menu > li > a:first-child, .footer-container .bottomnav ul.menu > li [title~="kontakt"] {
         font-size: 1.3em;
         color: black !important;
         font-family: "HelveticaNeueBold";
         margin-bottom: 5px; }
-    .footer-container span.bottomnav li {
+      .footer-container .bottomnav ul.menu > li [title~="kontakt"] {
+        position: relative;
+        top: -5px; }
+    .footer-container .bottomnav li {
       float: none;
       list-style-type: none; }
-    .footer-container span.bottomnav ul {
+    .footer-container .bottomnav ul {
       background: none;
       margin: 0; }
-    .footer-container span.bottomnav ul.sub-menu {
+    .footer-container .bottomnav ul.sub-menu {
       margin-top: 5px; }
-    .footer-container span.bottomnav a {
+    .footer-container .bottomnav a {
       color: #787878 !important;
-      text-decoration: none; }
+      text-decoration: none;
+      line-height: 1.5em; }
 
 .company-links {
-  width: 18.36735%;
-  float: left;
-  margin-right: 2.04082%; }
+  width: 16.66667%;
+  float: right;
+  margin-right: 0;
+  margin-top: 66px; }
+  .company-links aside {
+    margin-bottom: 0; }
   .company-links h2, .company-links h1 {
     font-size: 1.3em;
     font-family: "HelveticaNeueBold";
@@ -1264,17 +1289,17 @@ footer.site-footer {
   margin-top: 50px; }
 
 .company-brand {
-  width: 49.15254%;
+  width: 58.33333%;
   float: left;
-  margin-right: 1.69492%; }
+  margin-right: 4.16667%; }
   .company-brand object {
     height: 45px; }
 
 .copyright {
-  width: 49.15254%;
+  width: 37.5%;
   float: right;
   margin-right: 0; }
   .copyright p {
-    color: #9c9c9c;
-    text-align: right;
-    padding-top: 20px; }
+    color: #dfdfdf;
+    text-align: left;
+    padding-top: 17px; }

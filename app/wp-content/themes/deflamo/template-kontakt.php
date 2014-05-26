@@ -20,7 +20,7 @@ get_header(); ?>
 						<h1><?php the_field('image_text'); ?></h1>
 					</div>
 					<div class="hero-icon">
-						<object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/flamskyddande.svg">Your browser does not support SVG</object>
+						<img src="<?php bloginfo('template_directory'); ?>/icons/flamskyddande.svg">
 					</div>
 				</div>
 			</div>

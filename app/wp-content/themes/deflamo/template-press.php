@@ -20,7 +20,7 @@ get_header(); ?>
 						<h1><?php the_field('image_text'); ?></h1>
 					</div>
 					<div class="hero-icon">
-						<object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/flamskyddande.svg">Your browser does not support SVG</object>
+						<img src"<?php bloginfo('template_directory'); ?>/icons/flamskyddande.svg">
 					</div>
 				</div>
 			</div>
@@ -28,7 +28,9 @@ get_header(); ?>
 			<div class="content-container">
 				<div class="main-content">
 
-					<iframe src="http://www.mynewsdesk.com/se/deflamo"></iframe>
+					<script type="text/javascript" charset="utf-8" id="mnd-script"> document.domain = /([a-z0-9-]+\.((co|org|gov|com)\.\w{2}|\w+))$/i.exec(location.hostname)[0];
+            (function(){var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="//deflamo.mynewsdesk.com/hosted_newsroom.js";var i=document.getElementsByTagName('script')[0];i.parentNode.insertBefore(s,i);})();
+          </script>
 
 				</div>
 

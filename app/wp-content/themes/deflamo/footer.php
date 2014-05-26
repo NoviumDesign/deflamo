@@ -11,16 +11,16 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-    <div class="footer-container">  
-      <div class="company-links">
-        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-sidfot') ) : ?>
-        <?php endif; ?>
-      </div>
-      <span class="bottomnav">
+    <div class="footer-container">
+      <div class="bottomnav">
         <?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>
-      </span>
+        <div class="company-links">
+          <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-sidfot') ) : ?>
+          <?php endif; ?>
+        </div>
+      </div>
       <div class="company-brand">
-        <object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/images/deflamo-logo-green.svg">Your browser does not support SVG</object>
+        <img src="<?php bloginfo('template_directory'); ?>/images/deflamo-logo-green.svg">
       </div>
       <div class="copyright">
         <p>Copyright © 2014 Deflamo. Alla rättigheter förbehålls.</p>

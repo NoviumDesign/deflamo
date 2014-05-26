@@ -19,20 +19,24 @@ footer.site-footer
 .footer-container
   @include container(1200px)
 
-  span.bottomnav
-    @include span(8 last of 10)
+  .bottomnav
+    @include span(full)
 
     ul.menu > li
-      @include span(1 of 4)
+      @include span(1 of 5)
 
       &:last-child
-        @include span(1 last of 4)
+        @include span(1 last of 5)
 
-      > a:first-child
+      > a:first-child, [title~="kontakt"]
         font-size: 1.3em
         color: #000000 !important
         font-family: 'HelveticaNeueBold'
         margin-bottom: 5px
+
+      [title~="kontakt"]
+        position: relative
+        top: -5px
     
     li
       float: none
@@ -48,9 +52,14 @@ footer.site-footer
     a
       color: $dark-grey-color !important
       text-decoration: none
+      line-height: 1.5em
 
 .company-links
-  @include span(2 of 10)
+  @include span(1 last of 5)
+  margin-top: 66px
+
+  aside
+    margin-bottom: 0
 
   h2, h1
     font-size: 1.3em
@@ -69,15 +78,15 @@ footer.site-footer
   margin-top: 50px
 
 .company-brand
-  @include span(6 of 12)
+  @include span(3 of 5)
 
     object
       height: 45px
 
 .copyright
-  @include span(6 last of 12)
+  @include span(2 last of 5)
 
   p
     color: $copyright-color
-    text-align: right
-    padding-top: 20px
+    text-align: left
+    padding-top: 17px

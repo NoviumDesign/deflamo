@@ -27,7 +27,7 @@
 			<div class="site-branding">
 				<a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/apyrum-logo-white.svg"></a>
 			</div>
-			<object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/images/deflamo-no-tagline.svg" class="deflamo-logo">Your browser does not support SVG</object>
+			<img src="<?php bloginfo('template_directory'); ?>/images/deflamo-no-tagline.svg" class="deflamo-logo">
 		</div>
 
 		<div class="navcontainer">
