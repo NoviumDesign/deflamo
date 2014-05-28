@@ -19,7 +19,6 @@
 				if ( $categories_list && _s_categorized_blog() ) :
 			?>
 			<span class="cat-links">
-				<?php printf( __( '/ %1$s', '_s' ), $categories_list ); ?>
 			</span>
 			<?php endif; // End if categories ?>
 
@@ -33,7 +32,7 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
-		<?php the_content( __( '<br>Fortsätt läsa... <span class="meta-nav">&rarr;</span>', '_s' ) ); ?>
+		<?php the_content( __( 'Läs mer', '_s' ) ); ?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', '_s' ),

@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="company-brand">
-        <img src="<?php bloginfo('template_directory'); ?>/images/deflamo-logo-green.svg">
+        <img src="<?php bloginfo('template_directory'); ?>/images/deflamo-logo-black.svg">
       </div>
       <div class="copyright">
         <p>Copyright © 2014 Deflamo. Alla rättigheter förbehålls.</p>

@@ -3,12 +3,23 @@
   h1
     font-size: 1.4em
     margin: 10px 0px 0px 0px
-    color: #000000
-    text-transform: uppercase
+    color: #434343
+    
+    a
+      line-height: 1.3em
+
+  a
+    text-decoration: none
+    
+    &:hover
+      text-decoration: underline
+
+  a.more-link
+    display: block
+    margin-top: -18px
 
   article
     border-bottom: 1px solid $dark-grey-color
-    padding-bottom: 30px
    
     &:last-child
       border-bottom: none
@@ -17,22 +28,10 @@
   margin-top: 0
 
 .entry-meta
+  margin-bottom: 10px
 
   a
     color: #000000
-    text-decoration: none
-    
-    &:hover
-      color: #000000
-      text-decoration: underline
 
 .post-navigation
   @include span(10)
-
-a.more-link
-  color: #000000
-  text-decoration: none
-
-  &:hover
-    color: #000000
-    text-decoration: underline

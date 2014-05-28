@@ -23,7 +23,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<div class="hero" style="<?php echo $hero_image; ?>"></div>
+			<div class="hero hero-news">
+			</div>
 
 			<div class="content-container">
 				<div class="main-content news">
@@ -54,10 +55,8 @@ get_header(); ?>
 
 
 				<div class="sidebar">
-					<div class="multiple-widget-container">
-						<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-nyheter') ) : ?>
-						<?php endif; ?>
-					</div>
+					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-nyheter') ) : ?>
+					<?php endif; ?>
 					<ul class="contact">
 						<li><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/phone.svg">Your browser does not support SVG</object><span class="phone">08-631 91 80</span></li>
 						<li class="email"><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/mail.svg">Your browser does not support SVG</object><a href="mailto:info@deflamo.se">info@deflamo.se</a></li>

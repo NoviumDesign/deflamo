@@ -19,7 +19,6 @@
 				if ( $categories_list && _s_categorized_blog() ) :
 			?>
 			<span class="cat-links">
-				<?php printf( __( '/ %1$s', '_s' ), $categories_list ); ?>
 			</span>
 			<?php endif; // End if categories ?>
 

@@ -25,13 +25,15 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="hero" style="<?php echo $hero_image; ?>">
-				<div class="hero-container">
-					<div class="hero-tagline">
-						<h1><?php the_field('image_text'); ?></h1>
-					</div>
-					<div class="hero-icon">
-						<img src="<?php bloginfo('template_directory'); ?>/icons/flamskyddande.svg">
+			<div class="hero" style="background-color:<?php the_field('hero_background_color'); ?>;<?php echo $hero_image; ?>">
+				<div class="heropatternholder">
+					<div class="hero-container">
+						<div class="hero-tagline">
+							<h1><?php the_field('image_text'); ?></h1>
+						</div>
+						<div class="hero-icon">
+							<img src="<?php bloginfo('template_directory'); ?>/icons/flamskyddande.svg">
+						</div>
 					</div>
 				</div>
 			</div>

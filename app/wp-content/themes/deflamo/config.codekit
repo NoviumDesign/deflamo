@@ -153,6 +153,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/familj-svv.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 41887,
+		"inputAbbreviatedPath": "\/images\/familj-svv.jpg",
+		"outputAbbreviatedPath": "\/images\/familj-svv.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/hero-contact.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

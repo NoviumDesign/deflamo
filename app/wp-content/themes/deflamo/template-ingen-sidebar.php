@@ -4,13 +4,22 @@ Template Name: Ingen Sidebar
 */
 get_header(); ?>
 
+<?php
+	// page image
+	$thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'page_image');
+	$page_image_url = $thumb['0'];
+	$hero_image = $page_image_url ? 'background-image: url(' . $page_image_url . ')' : '';
+?>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<div class="hero" style="<?php echo $hero_image; ?>">
-				<div class="hero-container">
-					<div class="hero-tagline">
-						<h1><?php the_field('image_text'); ?></h1>
+			<div class="hero" style="background-color:<?php the_field('hero_background_color'); ?>;<?php echo $hero_image; ?>">
+				<div class="heropatternholder">
+					<div class="hero-container">
+						<div class="hero-tagline">
+							<h1><?php the_field('image_text'); ?></h1>
+						</div>
 					</div>
 				</div>
 			</div>

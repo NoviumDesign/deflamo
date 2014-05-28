@@ -18,13 +18,17 @@ get_header('apyrum'); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<div class="hero" style="<?php echo $hero_image; ?>">
-				<div class="hero-container">
-					<div class="hero-tagline">
-						<h1><?php the_field('image_text'); ?></h1>
-					</div>
-					<div class="hero-icon">
-						<img src="<?php bloginfo('template_directory'); ?>/icons/flamskyddande.svg">
+			<div class="hero" style="background-color:<?php the_field('hero_background_color'); ?>;<?php echo $hero_image; ?>">
+				<div class="heropatternholder">
+					<div class="hero-container">
+						<div class="hero-tagline">
+							<h1><img src="<?php bloginfo('template_directory'); ?>/icons/check.svg">Hög Prestanda<br>
+							<img src="<?php bloginfo('template_directory'); ?>/icons/check.svg">Miljöanpassat<br>
+							<img src="<?php bloginfo('template_directory'); ?>/icons/check.svg">Prisvärt</h1>
+						</div>
+						<div class="hero-icon">
+							<img src="<?php bloginfo('template_directory'); ?>/icons/flamskyddande.svg">
+						</div>
 					</div>
 				</div>
 			</div>

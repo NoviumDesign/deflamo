@@ -34,16 +34,11 @@
     margin-top: -14px
 
     li
-      margin-bottom: 10px
-      padding-bottom: 10px
-
-      &:first-child
-        border-bottom: 4px solid #FFFFFF
-        margin-bottom: 15px
-        padding-bottom: 15px
+      margin-bottom: 20px
 
       a
-        text-transform: uppercase
+        display: block
+        margin-bottom: -20px
 
   ul.contact
     margin: 0
@@ -55,12 +50,20 @@
       a, object, .phone
         vertical-align: middle
         margin: 10px 5px 10px 5px
+        font-family: 'HelveticaNeueBold'
+
+      .phone
+        margin-left: 4px
 
     li.email
       border: 1px solid #FFFFFF
       +border-radius(5px)
       text-align: center
       margin-left: 0px
+
+      object
+        width: 36px
+        height: 22px
 
   aside.widget_recent_entries
 
@@ -80,13 +83,3 @@
 
       li a
         color: #FFFFFF !important
-
-  .multiple-widget-container
-
-    aside
-      border-bottom: 4px solid #FFFFFF
-      padding-bottom: 30px
-
-      &:last-child
-        border: none
-        padding: 0

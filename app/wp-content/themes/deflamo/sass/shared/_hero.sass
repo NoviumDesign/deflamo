@@ -1,7 +1,11 @@
-.hero
+.hero, .hero-news
   height: 215px
   background-position: center
   background-repeat: no-repeat
+
+.hero-news
+  background-image: url('images/familj-svv.jpg')
+  background-color: #8C8F91
   
 .hero-container
   @include container(1200px)
@@ -10,27 +14,31 @@
   height: 215px
   background-image: url('images/menu-pattern.svg')
   background-repeat: no-repeat
-  background-position-x: 797px
-  background-position-y: -598px
+  background-position-x: 777px
+  background-position-y: -128px
 
 
 .hero-tagline
   @include span(6)
+  height: 205px
+  position: relative
 
   h1
+    position: absolute
+    bottom: 0px
     color: white
     font-size: 2.3em
-    line-height: 1.15em
+    line-height: 1.3em
     text-transform: uppercase
-    margin-bottom: 0
 
-    &:first-child
-      margin-top: 35px
+  img
+    margin: 0px 15px 0px 0px
+    height: 35px
 
 .hero-icon
   @include span(3 last)
 
   img
-    margin: 10px 0px 0px 60px
+    margin: 26px 0px 0px 60px
     width: auto
-    height: 198px
+    height: 165px

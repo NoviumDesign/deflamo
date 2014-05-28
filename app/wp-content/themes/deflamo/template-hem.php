@@ -14,7 +14,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<div class="hero" style="<?php echo $hero_image; ?>">
+			
+			<div class="hero" style="background-color:<?php the_field('hero_background_color'); ?>;<?php echo $hero_image; ?>">
 				<div class="heropatternholder">
 					<div class="hero-container">
 						<div class="hero-tagline">
@@ -88,7 +89,7 @@ get_header(); ?>
 					<ul class="latest-news">
 					  <?php $the_query = new WP_Query( 'showposts=4' ); ?>
 					  <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-						  <li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a><br><?php echo substr(strip_tags($post->post_content), 0, 70 );?> [...]</li>
+						  <li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a><br><?php echo substr(strip_tags($post->post_content), 0, 70 );?>...</li>
 					  <?php endwhile;?>
 					</ul>
 					<ul class="contact">

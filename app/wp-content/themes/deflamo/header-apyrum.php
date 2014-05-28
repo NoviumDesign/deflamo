@@ -25,9 +25,8 @@
 
 		<div class="headerinner">
 			<div class="site-branding">
-				<a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/apyrum-logo-white.svg"></a>
+				<a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/apyrum-logo-white.svg" class="apyrum-logo"></a>
 			</div>
-			<img src="<?php bloginfo('template_directory'); ?>/images/deflamo-no-tagline.svg" class="deflamo-logo">
 		</div>
 
 		<div class="navcontainer">

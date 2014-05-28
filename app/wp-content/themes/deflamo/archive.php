@@ -19,7 +19,15 @@ get_header(); ?>
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<div class="hero" style="<?php echo $hero_image; ?>"></div>
+			<div class="hero" style="background-color:<?php the_field('hero_background_color'); ?>;<?php echo $hero_image; ?>">
+				<div class="heropatternholder">
+					<div class="hero-container">
+						<div class="hero-tagline">
+							<h1><?php the_field('image_text'); ?></h1>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<div class="content-container">
 				<div class="main-content archive">

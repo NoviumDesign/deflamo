@@ -21,7 +21,7 @@
 				if ( ! _s_categorized_blog() ) {
 					// This blog only has 1 category so we just need to worry about tags in the meta text
 					if ( '' != $tag_list ) {
-						$meta_text = __( '/ %2$s.', '_s' );
+						$meta_text = __( '%2$s.', '_s' );
 					} else {
 						$meta_text = __( '', '_s' );
 					}
@@ -29,16 +29,15 @@
 				} else {
 					// But this blog has loads of categories so we should probably display them here
 					if ( '' != $tag_list ) {
-						$meta_text = __( 'T/ %1$s / %2$s.', '_s' );
+						$meta_text = __( 'T %1$s %2$s.', '_s' );
 					} else {
-						$meta_text = __( '/ %1$s.', '_s' );
+						$meta_text = __( '%1$s.', '_s' );
 					}
 
 				} // end check for categories on this blog
 
 				printf(
 					$meta_text,
-					$category_list,
 					$tag_list,
 					get_permalink()
 				);
