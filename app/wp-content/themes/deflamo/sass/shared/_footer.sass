@@ -3,21 +3,8 @@ footer.site-footer
   background-color: $light-grey-color
   padding-top: 30px
 
-  &:after
-    bottom: 100%
-    left: 37.5%
-    border: solid transparent
-    content: " "
-    height: 0
-    width: 0
-    position: absolute
-    pointer-events: none
-    border-bottom-color: $light-grey-color
-    border-width: 20px
-    margin-left: -20px
-
 .footer-container
-  @include container(1200px)
+  @include container(1200px static)
 
   .bottomnav
     @include span(full)
@@ -42,6 +29,23 @@ footer.site-footer
       float: none
       list-style-type: none
 
+      &.current_page_item > a
+        color: #000000 !important
+        font-family: 'HelveticaNeueBold'
+
+      &.current_page_item:after
+        top: -103px
+        left: 20px
+        border: solid transparent
+        content: " "
+        height: 0
+        width: 0
+        position: absolute
+        pointer-events: none
+        border-bottom-color: $light-grey-color
+        border-width: 20px
+        margin-left: -20px
+
       &:hover > a
         color: #000000 !important
     
@@ -50,7 +54,8 @@ footer.site-footer
       margin: 0
 
     ul.sub-menu
-      margin-top: 5px
+      margin-top: -30px
+      position: relative
 
     a
       color: $dark-grey-color !important
@@ -59,7 +64,7 @@ footer.site-footer
 
 .company-links
   @include span(1 last of 5)
-  margin-top: 66px
+  margin-top: 99px
 
   aside
     margin-bottom: 0
@@ -78,7 +83,7 @@ footer.site-footer
       color: $dark-grey-color
 
 .company-brand, .copyright
-  margin-top: 50px
+  margin-top: 30px
 
 .company-brand
   @include span(3 of 5)

@@ -37,7 +37,7 @@ get_header(); ?>
 				</div>
 
 				<div class="sidebar">
-					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-hem') ) : ?>
+					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-kontakt') ) : ?>
 					<?php endif; ?>
 					<ul class="latest-news">
 					  <?php $the_query = new WP_Query( 'showposts=4' ); ?>

@@ -677,8 +677,7 @@ header.site-header {
   background-color: #398740;
   background-image: url("images/menu-pattern.svg");
   background-repeat: no-repeat;
-  background-position-x: 770px;
-  background-position-y: -23px; }
+  background-position: 770px -23px; }
 
 .headerinner {
   max-width: 1200px;
@@ -708,7 +707,7 @@ img.apyrum-logo {
   background-color: white; }
 
 .navinner {
-  max-width: 1200px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto; }
   .navinner:after {
@@ -728,6 +727,14 @@ img.apyrum-logo {
     .main-navigation li:hover a {
       color: white;
       text-decoration: none; }
+  .main-navigation li.current_page_item {
+    background-color: black; }
+    .main-navigation li.current_page_item a {
+      color: white !important; }
+  .main-navigation li.current-menu-parent {
+    background-color: black; }
+    .main-navigation li.current-menu-parent > a {
+      color: white; }
   .main-navigation a {
     color: black;
     padding: 5px 10px 5px 10px; }
@@ -738,8 +745,8 @@ img.apyrum-logo {
   height: 0; }
   #lang_sel_list ul {
     position: absolute;
-    bottom: 34px;
-    right: 113px; }
+    top: -29px;
+    right: 62px; }
   #lang_sel_list li {
     background-color: white;
     border-radius: 5px 5px 0 0;
@@ -747,14 +754,17 @@ img.apyrum-logo {
     padding: 4px 5px 1px 5px !important; }
     #lang_sel_list li:hover {
       background-color: black; }
-      #lang_sel_list li:hover a {
+      #lang_sel_list li:hover a, #lang_sel_list li:hover a.lang_sel_sel {
         color: white;
         background-color: black; }
   #lang_sel_list a {
     font-family: "HelveticaNeue" !important;
-    color: black !important;
+    color: black;
     font-size: 15px;
     padding: 3px 7px 3px 7px !important; }
+
+a.lang_sel_other {
+  opacity: 0.5; }
 
 ul.sub-menu,
 ul.children {
@@ -766,6 +776,9 @@ ul.children {
   ul.sub-menu li:hover a,
   ul.children li:hover a {
     color: white !important; }
+
+li.icl-en {
+  display: none; }
 
 body {
   font-family: "HelveticaNeue";
@@ -806,27 +819,6 @@ a {
   a:hover {
     text-decoration: underline; }
 
-tr {
-  border-top: 1px solid #f1f1f1;
-  border-bottom: 1px solid #f1f1f1; }
-
-th, td {
-  padding: 5px 10px 5px 10px; }
-
-tr > td:first-child {
-  width: 305px; }
-
-tr:nth-child(2n+2) {
-  background-color: #f1f1f1;
-  border-color: #787878; }
-
-table.no-background tr {
-  background: none;
-  border: none; }
-table.no-background td {
-  padding: 0;
-  min-width: 0; }
-
 ul {
   margin: 0px 0px 20px 20px; }
 
@@ -836,7 +828,7 @@ ol {
 .content-container {
   margin-top: 30px;
   margin-bottom: 30px;
-  max-width: 1200px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto; }
   .content-container:after {
@@ -864,6 +856,9 @@ ol {
       line-height: 1.5em;
       margin-bottom: 20px; }
 
+hr {
+  color: #787878; }
+
 .hero, .hero-news {
   height: 215px;
   background-position: center;
@@ -886,8 +881,7 @@ ol {
   height: 215px;
   background-image: url("images/menu-pattern.svg");
   background-repeat: no-repeat;
-  background-position-x: 777px;
-  background-position-y: -128px; }
+  background-position: 777px -128px; }
 
 .hero-tagline {
   width: 49.15254%;
@@ -915,6 +909,37 @@ ol {
     width: auto;
     height: 165px; }
 
+hr.extra-wide {
+  width: 708px; }
+
+table {
+  width: 708px;
+  border: 1px solid #f1f1f1; }
+
+tr {
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1; }
+
+th, td {
+  padding: 5px 10px 5px 10px; }
+
+tr > td:first-child {
+  width: 205px; }
+
+tr:nth-child(2n+2) {
+  background-color: #f1f1f1;
+  border-color: #787878; }
+
+table.no-background {
+  width: 100%;
+  border: none; }
+  table.no-background tr {
+    background: none;
+    border: none; }
+  table.no-background td {
+    padding: 0;
+    min-width: 0; }
+
 .two-columns article {
   width: 100%;
   float: left;
@@ -932,6 +957,15 @@ ol {
     width: 100%;
     float: right;
     margin-right: 0; }
+  .two-columns article .one-column-width {
+    width: 74.57627%;
+    float: left;
+    margin-right: 1.69492%; }
+
+ul.taglines {
+  border: 1px solid #787878;
+  padding: 25px 35px 25px 50px;
+  margin: 0; }
 
 .portraits {
   width: 100%;
@@ -1012,6 +1046,9 @@ ol {
         background-color: white;
         margin-top: 5px; }
 
+img.portrait {
+  width: 170px; }
+
 .news h1 {
   font-size: 1.4em;
   margin: 10px 0px 0px 0px;
@@ -1090,10 +1127,12 @@ article.nyhet-artikel h1 {
     list-style-type: none; }
     .sidebar ul li {
       color: white; }
+      .sidebar ul li.current_page_item > a {
+        font-family: "HelveticaNeueBold"; }
       .sidebar ul li a {
         color: white;
         text-decoration: none;
-        font-family: "HelveticaNeueBold"; }
+        font-family: "HelveticaNeue"; }
       .sidebar ul li a:hover {
         text-decoration: underline; }
   .sidebar ul.latest-news {
@@ -1102,7 +1141,8 @@ article.nyhet-artikel h1 {
       margin-bottom: 20px; }
       .sidebar ul.latest-news li a {
         display: block;
-        margin-bottom: -20px; }
+        margin-bottom: -20px;
+        font-family: "HelveticaNeueBold"; }
   .sidebar ul.contact {
     margin: 0; }
     .sidebar ul.contact li {
@@ -1111,9 +1151,10 @@ article.nyhet-artikel h1 {
       .sidebar ul.contact li a, .sidebar ul.contact li object, .sidebar ul.contact li .phone {
         vertical-align: middle;
         margin: 10px 5px 10px 5px;
-        font-family: "HelveticaNeueBold"; }
+        font-family: "HelveticaNeue"; }
       .sidebar ul.contact li .phone {
-        margin-left: 4px; }
+        margin-left: 4px;
+        font-family: "HelveticaNeueBold"; }
     .sidebar ul.contact li.email {
       border: 1px solid white;
       -webkit-border-radius: 5px;
@@ -1124,6 +1165,8 @@ article.nyhet-artikel h1 {
       .sidebar ul.contact li.email object {
         width: 36px;
         height: 22px; }
+      .sidebar ul.contact li.email a {
+        font-family: "HelveticaNeueBold"; }
   .sidebar aside.widget_recent_entries a {
     font-family: "HelveticaNeue"; }
   .sidebar aside.widget_recent_entries li {
@@ -1223,21 +1266,9 @@ footer.site-footer {
   position: relative;
   background-color: #f1f1f1;
   padding-top: 30px; }
-  footer.site-footer:after {
-    bottom: 100%;
-    left: 37.5%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-bottom-color: #f1f1f1;
-    border-width: 20px;
-    margin-left: -20px; }
 
 .footer-container {
-  max-width: 1200px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto; }
   .footer-container:after {
@@ -1268,13 +1299,29 @@ footer.site-footer {
     .footer-container .bottomnav li {
       float: none;
       list-style-type: none; }
+      .footer-container .bottomnav li.current_page_item > a {
+        color: black !important;
+        font-family: "HelveticaNeueBold"; }
+      .footer-container .bottomnav li.current_page_item:after {
+        top: -103px;
+        left: 20px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-bottom-color: #f1f1f1;
+        border-width: 20px;
+        margin-left: -20px; }
       .footer-container .bottomnav li:hover > a {
         color: black !important; }
     .footer-container .bottomnav ul {
       background: none;
       margin: 0; }
     .footer-container .bottomnav ul.sub-menu {
-      margin-top: 5px; }
+      margin-top: -30px;
+      position: relative; }
     .footer-container .bottomnav a {
       color: #787878 !important;
       text-decoration: none;
@@ -1284,7 +1331,7 @@ footer.site-footer {
   width: 16.66667%;
   float: right;
   margin-right: 0;
-  margin-top: 66px; }
+  margin-top: 99px; }
   .company-links aside {
     margin-bottom: 0; }
   .company-links h2, .company-links h1 {
@@ -1299,7 +1346,7 @@ footer.site-footer {
       color: #787878; }
 
 .company-brand, .copyright {
-  margin-top: 50px; }
+  margin-top: 30px; }
 
 .company-brand {
   width: 58.33333%;

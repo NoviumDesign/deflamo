@@ -22,9 +22,7 @@ get_header('apyrum'); ?>
 				<div class="heropatternholder">
 					<div class="hero-container">
 						<div class="hero-tagline">
-							<h1><img src="<?php bloginfo('template_directory'); ?>/icons/check.svg">Hög Prestanda<br>
-							<img src="<?php bloginfo('template_directory'); ?>/icons/check.svg">Miljöanpassat<br>
-							<img src="<?php bloginfo('template_directory'); ?>/icons/check.svg">Prisvärt</h1>
+							<h1><?php the_field('image_text'); ?></h1>
 						</div>
 						<div class="hero-icon">
 							<img src="<?php bloginfo('template_directory'); ?>/icons/flamskyddande.svg">

@@ -10,7 +10,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=1300">
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -36,9 +36,9 @@
 					<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_s' ); ?></a>
 
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+					<?php do_action('icl_language_selector'); ?><!-- WPML Selector -->
 				</nav><!-- #site-navigation -->
 			</div>
-			<?php do_action('icl_language_selector'); ?><!-- WPML Selector -->
 		</div>
 
 	</header><!-- #masthead -->

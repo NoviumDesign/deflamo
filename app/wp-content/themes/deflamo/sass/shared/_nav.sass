@@ -2,7 +2,7 @@
   background-color: #FFFFFF
 
 .navinner
-  @include container(1200px)
+  @include container(1200px static)
 
 .main-navigation
   position: relative
@@ -16,6 +16,18 @@
       color: #FFFFFF
       text-decoration: none
 
+  li.current_page_item
+    background-color: #000000
+
+    a
+      color: #FFFFFF !important
+
+  li.current-menu-parent
+    background-color: #000000
+    
+    & > a
+      color: #FFFFFF
+
   a
     color: #000000
     padding: 5px 10px 5px 10px
@@ -28,8 +40,8 @@
 
   ul
     position: absolute
-    bottom: 34px
-    right: 113px
+    top: -29px
+    right: 62px
 
   li
     background-color: #FFFFFF
@@ -40,15 +52,18 @@
     &:hover
       background-color: #000000
 
-      a
+      a, a.lang_sel_sel
         color: #FFFFFF
         background-color: #000000
 
   a
-    font-family: 'HelveticaNeue'!important
-    color: #000000!important
+    font-family: 'HelveticaNeue' !important
+    color: #000000
     font-size: 15px
-    padding: 3px 7px 3px 7px!important
+    padding: 3px 7px 3px 7px !important
+
+a.lang_sel_other
+  opacity: 0.5
 
 ul.sub-menu,
 ul.children
@@ -64,3 +79,7 @@ ul.children
 
     a
       color: #FFFFFF !important
+
+// Hide during English text development
+li.icl-en
+  display: none
