@@ -48,13 +48,13 @@ get_header(); ?>
             <div class="tab-toggler-container">
 
               <a href="#" class="tab-toggler active">
-                <?php _e( 'Delårsrapporter', '_s' ); ?>
+                <?php _e( 'Interim Reports', '_s' ); ?>
               </a>
               <a href="#" class="tab-toggler">
-                <?php _e( 'Årsredovisningar', '_s' ); ?>
+                <?php _e( 'Annual reports', '_s' ); ?>
               </a>
               <a href="#" class="tab-toggler">
-                <?php _e( 'Bolagsstämmoprotokoll', '_s' ); ?>
+                <?php _e( 'General Meetings', '_s' ); ?>
               </a>
             </div>
 
