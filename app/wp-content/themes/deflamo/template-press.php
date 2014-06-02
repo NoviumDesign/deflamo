@@ -46,8 +46,8 @@ get_header(); ?>
 					  <?php endwhile;?>
 					</ul>
 					<ul class="contact">
-						<li><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/phone.svg">Your browser does not support SVG</object><span class="phone">08-631 91 80</span></li>
-						<li class="email"><object type="image/svg+xml" data="<?php bloginfo('template_directory'); ?>/icons/mail.svg">Your browser does not support SVG</object><a href="mailto:info@deflamo.se">info@deflamo.se</a></li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/icons/phone.svg"><span class="phone">08-631 91 80</span></li>
+						<li class="email"><img src="<?php bloginfo('template_directory'); ?>/icons/mail.svg"><a href="mailto:info@deflamo.se">info@deflamo.se</a></li>
 					</ul>
 				</div>
 			</div>
