@@ -940,6 +940,24 @@ table.no-background {
     padding: 0;
     min-width: 0; }
 
+.tab-toggler-container {
+  display: block;
+  clear: both;
+  margin-bottom: 20px;
+  overflow: auto; }
+  .tab-toggler-container a.tab-toggler {
+    width: 225px;
+    text-align: center;
+    background-color: #398740;
+    padding: 20px;
+    float: left;
+    color: white !important;
+    margin-left: 10px; }
+    .tab-toggler-container a.tab-toggler:first-child {
+      margin-left: 0; }
+  .tab-toggler-container a.active {
+    font-family: "HelveticaNeueBold"; }
+
 .two-columns article {
   width: 100%;
   float: left;
