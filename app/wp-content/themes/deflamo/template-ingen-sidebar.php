@@ -20,6 +20,9 @@ get_header(); ?>
 						<div class="hero-tagline">
 							<h1><?php the_field('image_text'); ?></h1>
 						</div>
+						<div class="hero-icon">
+							<img src="<?php the_field('hero_icon'); ?>">
+						</div>
 					</div>
 				</div>
 			</div>

@@ -22,7 +22,7 @@ get_header(); ?>
 							<h1><?php the_field('image_text'); ?></h1>
 						</div>
 						<div class="hero-icon">
-							<img src="<?php bloginfo('template_directory'); ?>/icons/flamskyddande.svg">
+							<img src="<?php the_field('hero_icon'); ?>">
 						</div>
 					</div>
 				</div>

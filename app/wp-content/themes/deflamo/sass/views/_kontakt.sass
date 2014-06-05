@@ -4,12 +4,13 @@
 
   .employee
     @include span(4 of 12)
-    &:last-child
-      @include span (4 last of 12)
 
     ul
       list-style-type: none
-      margin: 10px 20px 0px 20px
+      margin: 10px 0px 0px 0px
+
+  .last
+    @include span (4 last of 12)
 
 .wpcf7
   @include span(12)
